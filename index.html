@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PromptVault — 250+ Expert AI Prompts for Professionals</title>
+<meta name="description" content="Expert-level AI prompt collections for marketers, developers, content creators, business strategists, and email professionals. 250+ tested prompts. From $9.">
+<meta name="keywords" content="AI prompts, ChatGPT prompts, prompt engineering, marketing prompts, developer prompts, business prompts, prompt templates">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://christian140903-sudo.github.io/prompt-vault/">
+
+<meta property="og:title" content="PromptVault — 250+ Expert AI Prompts">
+<meta property="og:description" content="Expert-level AI prompt collections for professionals. 250+ tested, refined prompts organized by profession. From $9.">
+<meta property="og:type" content="website">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#07070a;--surface:#0e0e14;--surface2:#151520;--border:rgba(255,255,255,.06);--text:#e5e5e5;--text2:#888;--accent:#a855f7;--accent2:#c084fc;--gold:#fbbf24;--emerald:#10b981;--blue:#3b82f6;--pink:#ec4899;--red:#ef4444}
+
+@keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes glow{0%,100%{box-shadow:0 0 20px rgba(168,85,247,.15)}50%{box-shadow:0 0 40px rgba(168,85,247,.3)}}
+@keyframes gradient{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+
+body{font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+
+.bg-noise{position:fixed;inset:0;opacity:.03;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");pointer-events:none}
+.bg-glow{position:fixed;top:-30%;right:10%;width:50%;height:50%;background:radial-gradient(ellipse,rgba(168,85,247,.06),transparent 70%);pointer-events:none}
+
+header{position:sticky;top:0;z-index:100;padding:1.25rem 2rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border);backdrop-filter:blur(16px);background:rgba(7,7,10,.8)}
+.logo{font-size:1.3rem;font-weight:800;letter-spacing:-.5px;text-decoration:none;color:var(--text);display:flex;align-items:center;gap:.6rem}
+.logo-mark{width:32px;height:32px;background:linear-gradient(135deg,var(--accent),var(--gold));border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:900;color:#fff}
+.nav-cta{background:var(--accent);color:#fff;padding:.6rem 1.4rem;border-radius:8px;font-size:.85rem;font-weight:600;text-decoration:none;transition:all .2s}
+.nav-cta:hover{background:var(--accent2)}
+
+.hero{text-align:center;padding:6rem 2rem 4rem;max-width:750px;margin:0 auto}
+.hero-badge{display:inline-block;font-size:.75rem;color:var(--gold);background:rgba(251,191,36,.08);border:1px solid rgba(251,191,36,.15);padding:.35rem .9rem;border-radius:20px;margin-bottom:2rem;font-weight:600}
+.hero h1{font-size:3.2rem;font-weight:900;letter-spacing:-2px;line-height:1.05;margin-bottom:1.5rem}
+.hero h1 span{background:linear-gradient(135deg,var(--accent2),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero p{font-size:1.1rem;color:var(--text2);line-height:1.7;margin-bottom:2rem}
+.hero-num{font-size:4rem;font-weight:900;background:linear-gradient(135deg,var(--accent),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:.25rem}
+.hero-num-label{font-size:.9rem;color:var(--text2)}
+
+.packs{max-width:900px;margin:0 auto;padding:2rem 2rem 4rem}
+.packs h2{text-align:center;font-size:1.5rem;font-weight:800;margin-bottom:2.5rem}
+
+.pack-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:2rem;margin-bottom:1.5rem;transition:all .3s;animation:fadeIn .6s ease both;display:grid;grid-template-columns:1fr auto;gap:1.5rem;align-items:center}
+.pack-card:nth-child(1){animation-delay:.05s}.pack-card:nth-child(2){animation-delay:.1s}.pack-card:nth-child(3){animation-delay:.15s}.pack-card:nth-child(4){animation-delay:.2s}.pack-card:nth-child(5){animation-delay:.25s}
+.pack-card:hover{border-color:rgba(168,85,247,.3);transform:translateX(4px)}
+
+.pack-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:.75rem}
+.pack-name{font-size:1.15rem;font-weight:700;margin-bottom:.3rem}
+.pack-desc{font-size:.85rem;color:var(--text2);line-height:1.6;margin-bottom:.75rem}
+.pack-topics{display:flex;flex-wrap:wrap;gap:.3rem}
+.pack-topic{font-size:.65rem;padding:.15rem .5rem;border-radius:6px;background:rgba(168,85,247,.08);color:var(--accent2)}
+.pack-count{font-size:.75rem;color:var(--text2);margin-top:.5rem}
+
+.pack-right{text-align:center;min-width:120px}
+.pack-price{font-size:1.5rem;font-weight:800;color:var(--accent2);margin-bottom:.75rem}
+.pack-btn{display:inline-block;padding:.7rem 1.5rem;background:var(--accent);color:#fff;border:none;border-radius:8px;font-size:.85rem;font-weight:600;cursor:pointer;transition:all .2s;text-decoration:none}
+.pack-btn:hover{background:var(--accent2);transform:translateY(-1px)}
+
+.bundle{max-width:700px;margin:2rem auto 4rem;padding:2.5rem;background:linear-gradient(135deg,rgba(168,85,247,.08),rgba(251,191,36,.08));border:1px solid rgba(168,85,247,.2);border-radius:20px;text-align:center;animation:glow 4s ease-in-out infinite}
+.bundle h2{font-size:1.8rem;font-weight:800;margin-bottom:.5rem}
+.bundle .save{color:var(--emerald);font-weight:600;margin-bottom:1rem}
+.bundle p{color:var(--text2);margin-bottom:1.5rem}
+.bundle-price{font-size:2.5rem;font-weight:900}
+.bundle-price del{font-size:1.2rem;color:var(--text2);font-weight:400;margin-left:.5rem}
+.bundle-btn{display:inline-block;background:linear-gradient(135deg,var(--accent),var(--gold));color:#fff;padding:1rem 3rem;border-radius:12px;font-size:1.05rem;font-weight:700;text-decoration:none;border:none;cursor:pointer;transition:all .2s;margin-top:1rem}
+.bundle-btn:hover{transform:scale(1.03);box-shadow:0 8px 30px rgba(168,85,247,.4)}
+
+.sample{max-width:700px;margin:0 auto 4rem;padding:0 2rem}
+.sample h2{text-align:center;font-size:1.3rem;font-weight:800;margin-bottom:2rem}
+.sample-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1.5rem;margin-bottom:1rem}
+.sample-label{font-size:.7rem;text-transform:uppercase;letter-spacing:.5px;color:var(--accent2);margin-bottom:.5rem;font-weight:600}
+.sample-prompt{font-size:.9rem;color:var(--text);line-height:1.7;font-family:'SF Mono',Monaco,monospace;white-space:pre-wrap}
+.sample-var{color:var(--gold);font-weight:600}
+
+footer{border-top:1px solid var(--border);padding:2.5rem 2rem;text-align:center;color:var(--text2);font-size:.85rem}
+footer a{color:var(--accent2);text-decoration:none}
+
+/* Checkout */
+.checkout-overlay{display:none;position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,.7);backdrop-filter:blur(8px);align-items:center;justify-content:center}
+.checkout-overlay.active{display:flex}
+.checkout-modal{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:2.5rem;max-width:440px;width:90%;position:relative}
+.checkout-close{position:absolute;top:1rem;right:1rem;background:none;border:none;color:var(--text2);font-size:1.5rem;cursor:pointer;line-height:1}
+.checkout-title{font-size:1.3rem;font-weight:800;margin-bottom:.5rem}
+.checkout-item{font-size:.9rem;color:var(--accent2);margin-bottom:1.5rem}
+.checkout-field{margin-bottom:1rem}
+.checkout-field label{display:block;font-size:.8rem;color:var(--text2);margin-bottom:.4rem}
+.checkout-field input{width:100%;padding:.8rem 1rem;background:var(--surface2);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:.9rem;outline:none;transition:border-color .2s}
+.checkout-field input:focus{border-color:var(--accent)}
+.checkout-pay{width:100%;padding:.9rem;background:var(--accent);color:#fff;border:none;border-radius:10px;font-size:1rem;font-weight:700;cursor:pointer;transition:all .2s;margin-top:.5rem}
+.checkout-pay:hover{background:var(--accent2)}
+.checkout-success{display:none;text-align:center;padding:2rem 0}
+.checkout-success h3{color:var(--emerald);margin-bottom:.5rem}
+.checkout-success p{color:var(--text2);font-size:.9rem}
+
+@media(max-width:768px){
+  .hero h1{font-size:2.2rem}
+  .pack-card{grid-template-columns:1fr}
+  .pack-right{text-align:left;display:flex;align-items:center;gap:1rem}
+}
+</style>
+</head>
+<body>
+<div class="bg-noise"></div>
+<div class="bg-glow"></div>
+
+<header>
+  <a href="/" class="logo"><div class="logo-mark">PV</div> PromptVault</a>
+  <a href="#bundle" class="nav-cta">Get All 250 Prompts</a>
+</header>
+
+<section class="hero">
+  <div class="hero-badge">Expert-Level AI Prompts</div>
+  <h1>Stop Writing<br>Bad Prompts.<br><span>Start Getting Results.</span></h1>
+  <p>250+ tested, refined AI prompts organized by profession. Each prompt includes context variables, output formatting, and optimization tips. Works with ChatGPT, Claude, Gemini, and any LLM.</p>
+  <div class="hero-num">250+</div>
+  <div class="hero-num-label">Expert Prompts. 5 Packs. Every Profession.</div>
+</section>
+
+<section class="packs" id="packs">
+  <h2>Choose Your Pack</h2>
+
+  <div class="pack-card">
+    <div>
+      <div class="pack-icon" style="background:linear-gradient(135deg,rgba(236,72,153,.2),rgba(244,114,182,.2))">&#128640;</div>
+      <div class="pack-name">Marketing Pro</div>
+      <div class="pack-desc">50 prompts for digital marketers. Content strategy, social media, email campaigns, ad copy, and analytics reporting.</div>
+      <div class="pack-topics">
+        <span class="pack-topic">Content Strategy</span>
+        <span class="pack-topic">Social Media</span>
+        <span class="pack-topic">Email Marketing</span>
+        <span class="pack-topic">Ad Copy</span>
+        <span class="pack-topic">Analytics</span>
+      </div>
+      <div class="pack-count">50 prompts &middot; PDF + TXT</div>
+    </div>
+    <div class="pack-right">
+      <div class="pack-price">$9</div>
+      <button class="pack-btn" onclick="openCheckout('Marketing Pro — 50 Prompts','9')">Buy Pack</button>
+    </div>
+  </div>
+
+  <div class="pack-card">
+    <div>
+      <div class="pack-icon" style="background:linear-gradient(135deg,rgba(99,102,241,.2),rgba(129,140,248,.2))">&#128187;</div>
+      <div class="pack-name">Developer Kit</div>
+      <div class="pack-desc">50 prompts for software developers. Code review, architecture design, documentation, testing strategies, and DevOps.</div>
+      <div class="pack-topics">
+        <span class="pack-topic">Code Review</span>
+        <span class="pack-topic">Architecture</span>
+        <span class="pack-topic">Documentation</span>
+        <span class="pack-topic">Testing</span>
+        <span class="pack-topic">DevOps</span>
+      </div>
+      <div class="pack-count">50 prompts &middot; PDF + TXT</div>
+    </div>
+    <div class="pack-right">
+      <div class="pack-price">$9</div>
+      <button class="pack-btn" onclick="openCheckout('Developer Kit — 50 Prompts','9')">Buy Pack</button>
+    </div>
+  </div>
+
+  <div class="pack-card">
+    <div>
+      <div class="pack-icon" style="background:linear-gradient(135deg,rgba(245,158,11,.2),rgba(251,191,36,.2))">&#9997;</div>
+      <div class="pack-name">Content Creator</div>
+      <div class="pack-desc">50 prompts for content creators. Blog writing, video scripts, podcast outlines, social media content, and SEO optimization.</div>
+      <div class="pack-topics">
+        <span class="pack-topic">Blog Writing</span>
+        <span class="pack-topic">Video Scripts</span>
+        <span class="pack-topic">Podcasts</span>
+        <span class="pack-topic">Social Media</span>
+        <span class="pack-topic">SEO</span>
+      </div>
+      <div class="pack-count">50 prompts &middot; PDF + TXT</div>
+    </div>
+    <div class="pack-right">
+      <div class="pack-price">$9</div>
+      <button class="pack-btn" onclick="openCheckout('Content Creator — 50 Prompts','9')">Buy Pack</button>
+    </div>
+  </div>
+
+  <div class="pack-card">
+    <div>
+      <div class="pack-icon" style="background:linear-gradient(135deg,rgba(16,185,129,.2),rgba(52,211,153,.2))">&#128200;</div>
+      <div class="pack-name">Business Strategy</div>
+      <div class="pack-desc">50 prompts for business professionals. Market analysis, financial planning, product development, team management, and growth.</div>
+      <div class="pack-topics">
+        <span class="pack-topic">Market Analysis</span>
+        <span class="pack-topic">Finance</span>
+        <span class="pack-topic">Product Dev</span>
+        <span class="pack-topic">Management</span>
+        <span class="pack-topic">Growth</span>
+      </div>
+      <div class="pack-count">50 prompts &middot; PDF + TXT</div>
+    </div>
+    <div class="pack-right">
+      <div class="pack-price">$9</div>
+      <button class="pack-btn" onclick="openCheckout('Business Strategy — 50 Prompts','9')">Buy Pack</button>
+    </div>
+  </div>
+
+  <div class="pack-card">
+    <div>
+      <div class="pack-icon" style="background:linear-gradient(135deg,rgba(59,130,246,.2),rgba(96,165,250,.2))">&#128231;</div>
+      <div class="pack-name">Email Master</div>
+      <div class="pack-desc">50 prompts for email communication. Cold outreach, client communication, internal team emails, sales sequences, and support.</div>
+      <div class="pack-topics">
+        <span class="pack-topic">Cold Outreach</span>
+        <span class="pack-topic">Client Comms</span>
+        <span class="pack-topic">Team Emails</span>
+        <span class="pack-topic">Sales</span>
+        <span class="pack-topic">Support</span>
+      </div>
+      <div class="pack-count">50 prompts &middot; PDF + TXT</div>
+    </div>
+    <div class="pack-right">
+      <div class="pack-price">$9</div>
+      <button class="pack-btn" onclick="openCheckout('Email Master — 50 Prompts','9')">Buy Pack</button>
+    </div>
+  </div>
+</section>
+
+<section class="bundle" id="bundle">
+  <h2>The Complete Vault</h2>
+  <div class="save">Save $16 — All 250 prompts in one download</div>
+  <p>Marketing + Developer + Content + Business + Email. Every prompt pack in one download. Lifetime access to updates.</p>
+  <div class="bundle-price">$29 <del>$45</del></div>
+  <br>
+  <button class="bundle-btn" onclick="openCheckout('Complete PromptVault — 250 Prompts','29')">Get All 250 Prompts — $29</button>
+</section>
+
+<section class="sample">
+  <h2>Sample Prompts</h2>
+  <div class="sample-card">
+    <div class="sample-label">From: Marketing Pro</div>
+    <div class="sample-prompt">Create a 90-day content calendar for <span class="sample-var">{company_name}</span> in the <span class="sample-var">{industry}</span> industry.
+
+Target audience: <span class="sample-var">{audience_description}</span>
+Content pillars: <span class="sample-var">{3-5 key topics}</span>
+Platforms: <span class="sample-var">{platforms}</span>
+
+For each week, provide:
+1. Theme of the week
+2. 3 content pieces with titles, formats, and hooks
+3. Best posting times for <span class="sample-var">{timezone}</span>
+4. One engagement prompt to drive comments
+
+Format as a table with columns: Week | Day | Platform | Format | Title | Hook | CTA</div>
+  </div>
+  <div class="sample-card">
+    <div class="sample-label">From: Developer Kit</div>
+    <div class="sample-prompt">Review this <span class="sample-var">{language}</span> code for:
+1. Security vulnerabilities (OWASP Top 10)
+2. Performance bottlenecks
+3. Code smell and maintainability issues
+4. Edge cases and error handling gaps
+
+Code:
+```
+<span class="sample-var">{paste code here}</span>
+```
+
+For each issue found, provide:
+- Severity: Critical / High / Medium / Low
+- Location: Line number or function name
+- Problem: What's wrong
+- Fix: Corrected code snippet
+- Why: Explanation of the risk</div>
+  </div>
+</section>
+
+<footer>
+  <p>PromptVault &mdash; A <a href="https://nextool.app">NexTool</a> product. Need custom AI solutions? <a href="https://nextool.app/#pricing">We build those too</a>.</p>
+</footer>
+
+<!-- Checkout -->
+<div class="checkout-overlay" id="checkoutOverlay">
+  <div class="checkout-modal">
+    <button class="checkout-close" onclick="closeCheckout()">&times;</button>
+    <div id="checkoutForm">
+      <div class="checkout-title">Complete Purchase</div>
+      <div class="checkout-item" id="checkoutItem"></div>
+      <div class="checkout-field">
+        <label for="coName">Your Name</label>
+        <input type="text" id="coName" placeholder="John Doe">
+      </div>
+      <div class="checkout-field">
+        <label for="coEmail">Email (for delivery)</label>
+        <input type="email" id="coEmail" placeholder="john@example.com">
+      </div>
+      <button class="checkout-pay" id="checkoutPay">Pay with PayPal</button>
+      <p style="font-size:.75rem;color:var(--text2);text-align:center;margin-top:.8rem">Prompts delivered to your email within 1 hour after payment.</p>
+    </div>
+    <div class="checkout-success" id="checkoutSuccess">
+      <h3>Payment Initiated!</h3>
+      <p>After PayPal payment, your prompts will be sent to your email within 1 hour.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+var PAYPAL_USERNAME='YOUR_PAYPAL_USERNAME';var currentItem='',currentPrice='';
+function openCheckout(n,p){currentItem=n;currentPrice=p;document.getElementById('checkoutItem').textContent=n+' — $'+p;document.getElementById('checkoutForm').style.display='block';document.getElementById('checkoutSuccess').style.display='none';document.getElementById('checkoutOverlay').classList.add('active')}
+function closeCheckout(){document.getElementById('checkoutOverlay').classList.remove('active')}
+document.getElementById('checkoutOverlay').addEventListener('click',function(e){if(e.target===this)closeCheckout()});
+document.getElementById('checkoutPay').addEventListener('click',function(){var n=document.getElementById('coName').value.trim(),e=document.getElementById('coEmail').value.trim();if(!n||!e){alert('Please fill in name and email.');return}if(!e.includes('@')){alert('Please enter a valid email.');return}var id='PV-'+Date.now().toString(36).toUpperCase();var orders=JSON.parse(localStorage.getItem('pv_orders')||'[]');orders.push({id:id,item:currentItem,price:currentPrice,name:n,email:e,date:new Date().toISOString()});localStorage.setItem('pv_orders',JSON.stringify(orders));window.open('https://paypal.me/'+PAYPAL_USERNAME+'/'+currentPrice+'USD','_blank');document.getElementById('checkoutForm').style.display='none';document.getElementById('checkoutSuccess').style.display='block'});
+var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)'}})},{threshold:.1});document.querySelectorAll('.pack-card,.sample-card').forEach(function(el){obs.observe(el)});
+</script>
+</body>
+</html>
