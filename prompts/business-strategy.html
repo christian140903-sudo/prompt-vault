@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Business Strategy — 50 Expert AI Prompts for Business Professionals | PromptVault</title>
+<meta name="description" content="50 expert AI prompts for business strategy. Market analysis, competitive intelligence, pricing strategy, growth planning, hiring & more. Works with ChatGPT, Claude. $9.">
+<meta name="keywords" content="business strategy prompts, AI business prompts, market analysis prompts, growth strategy prompts, competitive analysis prompts">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://christian140903-sudo.github.io/prompt-vault/prompts/business-strategy.html">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#07070a;--surface:#0e0e14;--surface2:#151520;--border:rgba(255,255,255,.06);--text:#e5e5e5;--text2:#888;--accent:#10b981;--accent2:#34d399;--gold:#fbbf24;--emerald:#10b981}
+body{font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+.bg-noise{position:fixed;inset:0;opacity:.03;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");pointer-events:none}
+header{position:sticky;top:0;z-index:100;padding:1rem 2rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border);backdrop-filter:blur(16px);background:rgba(7,7,10,.8)}
+.logo{font-size:1.2rem;font-weight:800;text-decoration:none;color:var(--text);display:flex;align-items:center;gap:.5rem}
+.logo-mark{width:28px;height:28px;background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:900;color:#fff}
+.back-link{color:var(--accent2);font-size:.85rem;text-decoration:none;font-weight:500}
+.hero{text-align:center;padding:4rem 2rem 3rem;max-width:700px;margin:0 auto}
+.hero-icon{width:64px;height:64px;background:linear-gradient(135deg,rgba(16,185,129,.2),rgba(52,211,153,.2));border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:1.8rem;margin:0 auto 1.5rem}
+.hero h1{font-size:2.5rem;font-weight:900;letter-spacing:-1.5px;margin-bottom:1rem}
+.hero h1 span{background:linear-gradient(135deg,var(--accent2),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero p{color:var(--text2);font-size:1rem;line-height:1.7;margin-bottom:1.5rem}
+.hero-meta{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}
+.hero-meta-item{font-size:.85rem;color:var(--text2)}
+.hero-meta-item strong{color:var(--accent2)}
+.buy-bar{position:sticky;top:60px;z-index:90;padding:1rem 2rem;background:rgba(7,7,10,.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.buy-bar-info{font-size:.9rem;font-weight:600}
+.buy-bar-price{color:var(--accent2);font-size:1.1rem;font-weight:800}
+.buy-btn{background:var(--accent);color:#fff;padding:.6rem 1.5rem;border-radius:8px;font-size:.85rem;font-weight:700;border:none;cursor:pointer;transition:all .2s}
+.buy-btn:hover{background:var(--accent2);transform:translateY(-1px)}
+.prompts{max-width:800px;margin:0 auto;padding:2rem}
+.category-label{font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--accent2);font-weight:700;margin:2.5rem 0 1rem;padding-bottom:.5rem;border-bottom:1px solid var(--border)}
+.prompt-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;margin-bottom:1rem;overflow:hidden;transition:border-color .2s}
+.prompt-card:hover{border-color:rgba(16,185,129,.2)}
+.prompt-header{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.25rem;cursor:pointer}
+.prompt-num{font-size:.7rem;font-weight:700;color:var(--accent);background:rgba(16,185,129,.1);padding:.2rem .5rem;border-radius:4px;margin-right:.75rem}
+.prompt-title{flex:1;font-size:.95rem;font-weight:600}
+.prompt-toggle{color:var(--text2);font-size:1.2rem;transition:transform .3s}
+.prompt-card.open .prompt-toggle{transform:rotate(45deg);color:var(--accent2)}
+.prompt-body{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.prompt-body-inner{padding:0 1.25rem 1.25rem}
+.prompt-text{font-family:'SF Mono',Monaco,monospace;font-size:.82rem;color:var(--text);line-height:1.8;white-space:pre-wrap;background:var(--surface2);padding:1rem;border-radius:8px;border:1px solid var(--border);position:relative}
+.prompt-text .var{color:var(--gold);font-weight:600}
+.prompt-tip{margin-top:.75rem;padding:.75rem 1rem;background:rgba(16,185,129,.05);border:1px solid rgba(16,185,129,.1);border-radius:8px;font-size:.8rem;color:var(--text2);line-height:1.6}
+.prompt-tip strong{color:var(--accent2)}
+.copy-btn{position:absolute;top:.5rem;right:.5rem;background:var(--accent);color:#fff;border:none;padding:.35rem .75rem;border-radius:6px;font-size:.7rem;font-weight:600;cursor:pointer;opacity:.7;transition:opacity .2s}
+.copy-btn:hover{opacity:1}
+.locked-overlay{position:relative}
+.locked-overlay::after{content:'';position:absolute;bottom:0;left:0;right:0;height:80%;background:linear-gradient(to bottom,transparent,var(--bg));pointer-events:none}
+.unlock-card{text-align:center;padding:3rem 2rem;background:linear-gradient(135deg,rgba(16,185,129,.06),rgba(251,191,36,.06));border:1px solid rgba(16,185,129,.15);border-radius:16px;margin:2rem auto;max-width:500px}
+.unlock-card h3{font-size:1.3rem;font-weight:800;margin-bottom:.5rem}
+.unlock-card p{color:var(--text2);margin-bottom:1.5rem;font-size:.9rem}
+.unlock-price{font-size:2rem;font-weight:900;color:var(--accent2);margin-bottom:1rem}
+.unlock-btn{display:inline-block;background:linear-gradient(135deg,var(--accent),var(--gold));color:#fff;padding:.85rem 2.5rem;border-radius:10px;font-size:1rem;font-weight:700;border:none;cursor:pointer;transition:all .2s}
+.unlock-btn:hover{transform:scale(1.03);box-shadow:0 8px 25px rgba(16,185,129,.3)}
+.checkout-overlay{display:none;position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,.7);backdrop-filter:blur(8px);align-items:center;justify-content:center}
+.checkout-overlay.active{display:flex}
+.checkout-modal{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:2.5rem;max-width:440px;width:90%;position:relative}
+.checkout-close{position:absolute;top:1rem;right:1rem;background:none;border:none;color:var(--text2);font-size:1.5rem;cursor:pointer}
+.checkout-title{font-size:1.3rem;font-weight:800;margin-bottom:.5rem}
+.checkout-item{font-size:.9rem;color:var(--accent2);margin-bottom:1.5rem}
+.checkout-field{margin-bottom:1rem}
+.checkout-field label{display:block;font-size:.8rem;color:var(--text2);margin-bottom:.4rem}
+.checkout-field input{width:100%;padding:.8rem 1rem;background:var(--surface2);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:.9rem;outline:none}
+.checkout-field input:focus{border-color:var(--accent)}
+.checkout-pay{width:100%;padding:.9rem;background:var(--accent);color:#fff;border:none;border-radius:10px;font-size:1rem;font-weight:700;cursor:pointer;margin-top:.5rem}
+.checkout-pay:hover{background:var(--accent2)}
+.checkout-success{display:none;text-align:center;padding:2rem 0}
+.checkout-success h3{color:var(--emerald);margin-bottom:.5rem}
+.checkout-success p{color:var(--text2);font-size:.9rem}
+footer{border-top:1px solid var(--border);padding:2rem;text-align:center;color:var(--text2);font-size:.85rem}
+footer a{color:var(--accent2);text-decoration:none}
+@media(max-width:768px){.hero h1{font-size:1.8rem}.buy-bar{flex-wrap:wrap;justify-content:center}}
+</style>
+</head>
+<body>
+<div class="bg-noise"></div>
+<header>
+<a href="../" class="logo"><div class="logo-mark">PV</div> PromptVault</a>
+<a href="../" class="back-link">&larr; All Packs</a>
+</header>
+
+<section class="hero">
+<div class="hero-icon">&#128200;</div>
+<h1>Business Strategy<br><span>50 Expert Prompts</span></h1>
+<p>AI prompts for business professionals and founders. Market analysis, competitive intelligence, pricing strategy, financial planning, product development, team management, and growth frameworks. Each prompt delivers structured, actionable output.</p>
+<div class="hero-meta">
+<div class="hero-meta-item"><strong>50</strong> Prompts</div>
+<div class="hero-meta-item"><strong>5</strong> Categories</div>
+<div class="hero-meta-item"><strong>PDF + TXT</strong> Format</div>
+<div class="hero-meta-item">Works with <strong>Any LLM</strong></div>
+</div>
+</section>
+
+<div class="buy-bar">
+<div><span class="buy-bar-info">Business Strategy — 50 Prompts</span> <span class="buy-bar-price">$9</span></div>
+<button class="buy-btn" onclick="openCheckout()">Buy Full Pack — $9</button>
+</div>
+
+<section class="prompts">
+<div class="category-label">Section 1: Market Analysis & Research (Prompts 1-10) — Free Preview</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#1</span><span class="prompt-title">Complete Market Opportunity Analysis</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">You are a senior strategy consultant at McKinsey. Conduct a comprehensive market opportunity analysis.
+
+Business idea: <span class="var">{business_description}</span>
+Industry: <span class="var">{industry}</span>
+Target market: <span class="var">{geographic_region}</span>
+Current stage: <span class="var">{stage, e.g., "idea", "MVP", "revenue"}</span>
+
+Analyze:
+1. MARKET SIZE (TAM/SAM/SOM):
+   - Total Addressable Market with calculation methodology
+   - Serviceable Addressable Market with realistic constraints
+   - Serviceable Obtainable Market for first 2 years
+   - Growth rate and trajectory
+
+2. MARKET DYNAMICS:
+   - Key trends shaping this market (3-5)
+   - Regulatory environment and upcoming changes
+   - Technology shifts creating opportunities
+   - Consumer behavior changes
+
+3. COMPETITIVE LANDSCAPE:
+   - Direct competitors (top 5) with positioning map
+   - Indirect competitors and substitutes
+   - Barriers to entry
+   - Competitive advantages available
+
+4. CUSTOMER ANALYSIS:
+   - Primary customer segments (3-4)
+   - Willingness to pay
+   - Current alternatives they use
+   - Switching costs
+
+5. GO/NO-GO RECOMMENDATION:
+   - Confidence score (1-10) with reasoning
+   - Top 3 risks and mitigation strategies
+   - Recommended entry strategy
+   - Key assumptions to validate first
+
+Output: Executive summary + detailed analysis with data sources noted.<button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> Include any data you already have — revenue numbers, customer interviews, web traffic. Real data dramatically improves the analysis quality.</div>
+</div></div>
+</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#2</span><span class="prompt-title">Competitive Intelligence Deep Dive</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">Conduct competitive intelligence on <span class="var">{competitor_name}</span> for our business <span class="var">{your_business}</span>.
+
+What we know:
+- Their website: <span class="var">{url}</span>
+- Their pricing: <span class="var">{known_pricing}</span>
+- Their target market: <span class="var">{known_target}</span>
+
+Analyze using publicly available information:
+1. POSITIONING: How do they describe themselves? What's their value prop?
+2. PRICING STRATEGY: Free/freemium/premium? Price points? Discounting patterns?
+3. PRODUCT: Key features, recent launches, product roadmap signals
+4. MARKETING: Channels used, content strategy, ad spend signals, SEO keywords
+5. STRENGTHS: What do their customers praise? (Review mining)
+6. WEAKNESSES: What do customers complain about? (Negative reviews, churned users)
+7. TEAM: Key hires, team size, leadership background (LinkedIn signals)
+8. FUNDING: Investment rounds, revenue estimates, burn rate signals
+9. TECHNOLOGY: Tech stack, integrations, infrastructure choices
+
+STRATEGIC IMPLICATIONS for us:
+- Where are they vulnerable?
+- What can we learn from their approach?
+- How should we differentiate?
+- What would hurt them if we did it?
+
+Format: Competitive profile document + SWOT matrix + strategic recommendations.<button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> Paste their About page, pricing page, and a few customer reviews directly into the prompt. The AI can extract much more from actual text than from descriptions.</div>
+</div></div>
+</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#3</span><span class="prompt-title">Customer Interview Question Bank & Analysis Framework</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">Generate a customer discovery interview script for validating: <span class="var">{hypothesis_to_validate}</span>
+
+Product/service: <span class="var">{your_product}</span>
+Target customer: <span class="var">{customer_profile}</span>
+Interview length: <span class="var">{duration, e.g., "30 minutes"}</span>
+
+Create:
+1. WARM-UP QUESTIONS (2-3 min):
+   - Build rapport without biasing responses
+
+2. CONTEXT QUESTIONS (5 min):
+   - Understand their world before introducing your topic
+   - Current workflow, tools, and pain points
+
+3. PROBLEM VALIDATION (10 min):
+   - Explore the specific problem you're solving
+   - Severity, frequency, and current workarounds
+   - Money/time currently spent on this problem
+
+4. SOLUTION EXPLORATION (8 min):
+   - Reaction to your concept (without pitching)
+   - What would make them switch from current solution
+   - Deal-breakers and must-haves
+
+5. WILLINGNESS TO PAY (5 min):
+   - Price sensitivity without anchoring
+   - Budget authority and procurement process
+
+6. CLOSING:
+   - Referrals to other potential users
+   - Permission for follow-up
+
+ANALYSIS FRAMEWORK:
+- Signal vs noise indicators
+- Red flags in responses
+- How to score interviews (1-5 on problem severity, solution fit, willingness to pay)
+- Decision criteria: When to pivot vs persevere<button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> The best customer interviews never mention your product in the first half. Let them describe their problems before you introduce solutions.</div>
+</div></div>
+</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#4</span><span class="prompt-title">Pricing Strategy Optimizer</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">Design an optimal pricing strategy for: <span class="var">{product_or_service}</span>
+
+Current situation:
+- Current price: <span class="var">{current_price_or_none}</span>
+- Cost to deliver: <span class="var">{cost_per_unit}</span>
+- Target customer: <span class="var">{customer_profile}</span>
+- Competitor pricing: <span class="var">{competitor_prices}</span>
+- Current revenue: <span class="var">{revenue_or_projected}</span>
+
+Analyze and recommend:
+1. PRICING MODEL: Which model fits best and why?
+   - One-time vs subscription vs usage-based vs freemium
+   - Pros/cons for our specific case
+
+2. PRICE POINTS: Specific numbers with rationale
+   - Anchoring strategy
+   - Psychological pricing tactics
+   - Good/Better/Best tier structure
+
+3. PACKAGING: What goes in each tier?
+   - Feature allocation across tiers
+   - Migration triggers (what makes users upgrade)
+   - Annual vs monthly pricing and discount
+
+4. COMPETITIVE POSITIONING: Price relative to market
+   - Premium vs value vs penetration strategy
+   - How to justify price differences
+
+5. REVENUE MODELING:
+   - Scenario A: Conservative pricing
+   - Scenario B: Aggressive pricing
+   - Scenario C: Recommended pricing
+   - Break-even analysis for each
+
+6. IMPLEMENTATION: Launch strategy
+   - How to announce new pricing
+   - Grandfather existing users?
+   - A/B testing plan<button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> Include your cost structure. Pricing without understanding margins is guessing. Even rough cost estimates dramatically improve recommendations.</div>
+</div></div>
+</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#5</span><span class="prompt-title">SWOT to Strategy Action Plan Converter</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">Convert this SWOT analysis into a concrete 90-day strategic action plan.
+
+STRENGTHS:
+<span class="var">{list_strengths}</span>
+
+WEAKNESSES:
+<span class="var">{list_weaknesses}</span>
+
+OPPORTUNITIES:
+<span class="var">{list_opportunities}</span>
+
+THREATS:
+<span class="var">{list_threats}</span>
+
+Business context:
+- Company stage: <span class="var">{stage}</span>
+- Team size: <span class="var">{team_size}</span>
+- Budget available: <span class="var">{budget}</span>
+- Top priority: <span class="var">{main_goal}</span>
+
+Generate:
+1. STRATEGIC PRIORITIES (top 3):
+   - Strength-Opportunity plays (leverage strengths to capture opportunities)
+   - Weakness-Threat mitigations (address vulnerabilities)
+
+2. 90-DAY ACTION PLAN:
+   - Week 1-2: Quick wins
+   - Week 3-6: Foundation building
+   - Week 7-12: Growth acceleration
+   - Each action: Owner, deadline, success metric, dependencies
+
+3. RESOURCE ALLOCATION:
+   - Where to invest (time, money, people)
+   - What to stop doing (strategic "no's")
+   - What to outsource vs build in-house
+
+4. RISK REGISTER:
+   - Top 5 risks with probability and impact scores
+   - Mitigation plan for each
+   - Trigger events to watch for
+
+5. SUCCESS METRICS:
+   - Leading indicators (weekly tracking)
+   - Lagging indicators (monthly/quarterly)
+   - Decision points: When to pivot vs double down<button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> Be brutally honest in your SWOT. Sugarcoating weaknesses produces weak strategies. Include uncomfortable truths for the best output.</div>
+</div></div>
+</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#6</span><span class="prompt-title">Business Model Canvas Generator</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">Generate a complete Business Model Canvas for: <span class="var">{business_idea}</span>
+
+Context:
+- Industry: <span class="var">{industry}</span>
+- Stage: <span class="var">{idea / validated / scaling}</span>
+- Unique angle: <span class="var">{what_makes_you_different}</span>
+
+Fill each canvas section with specifics, not generalities:
+
+1. Customer Segments: Who exactly? (specific profiles, not demographics)
+2. Value Propositions: What job do you do for them? (jobs-to-be-done framework)
+3. Channels: How do you reach them? (prioritized by cost and effectiveness)
+4. Customer Relationships: How do you retain them? (automation vs high-touch)
+5. Revenue Streams: How do you make money? (pricing model + projections)
+6. Key Resources: What do you need? (people, tech, IP, capital)
+7. Key Activities: What do you do daily? (build, sell, support priorities)
+8. Key Partnerships: Who do you need? (suppliers, platforms, allies)
+9. Cost Structure: Where does money go? (fixed vs variable, biggest costs)
+
+For each section include:
+- Current state (if applicable)
+- Assumptions to validate
+- Biggest risk in this area
+
+End with: Top 3 most critical assumptions to test first, and how to test them cheaply.<button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> After generating, challenge each assumption. Ask: "What if this section is wrong? What breaks?" The AI will stress-test your model.</div>
+</div></div>
+</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#7</span><span class="prompt-title">Unit Economics & Financial Health Check</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">Analyze the unit economics and financial health of this business:
+
+Metrics (fill what you know):
+- Average revenue per customer: <span class="var">{ARPC}</span>
+- Customer acquisition cost: <span class="var">{CAC}</span>
+- Gross margin: <span class="var">{gross_margin}</span>
+- Churn rate: <span class="var">{monthly_churn}</span>
+- Customer lifetime: <span class="var">{avg_lifetime_months}</span>
+- Monthly recurring revenue: <span class="var">{MRR}</span>
+- Monthly burn rate: <span class="var">{burn_rate}</span>
+- Runway: <span class="var">{months_of_cash}</span>
+
+Analyze:
+1. LTV:CAC ratio (is it above 3:1?)
+2. CAC payback period
+3. Gross margin health
+4. Churn analysis and revenue impact
+5. Path to profitability timeline
+6. Cash flow projection (12 months)
+
+For each metric:
+- Is this healthy? (benchmark against industry)
+- What's the #1 lever to improve it?
+- Quick win vs structural fix
+- Impact if improved by 10%, 25%, 50%
+
+Output: Financial dashboard summary + prioritized improvement plan with expected ROI of each initiative.<button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> Even rough estimates work. "CAC is probably around $50-80" gives the AI enough to provide useful analysis.</div>
+</div></div>
+</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#8</span><span class="prompt-title">Go-to-Market Strategy Builder</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">Build a go-to-market strategy for launching: <span class="var">{product_or_feature}</span>
+
+Context:
+- Product: <span class="var">{description}</span>
+- Target customer: <span class="var">{ICP}</span>
+- Price point: <span class="var">{price}</span>
+- Budget: <span class="var">{launch_budget}</span>
+- Timeline: <span class="var">{launch_date}</span>
+- Team: <span class="var">{team_resources}</span>
+- Existing audience: <span class="var">{current_reach}</span>
+
+Create a GTM plan covering:
+1. POSITIONING: One sentence that captures why this matters
+2. MESSAGING: Value prop, proof points, objection handling
+3. LAUNCH TIMELINE: Week-by-week plan (T-4 weeks to T+4 weeks)
+4. CHANNELS: Ranked by expected ROI with specific tactics per channel
+5. CONTENT: What to create and when (landing page, demo, case study, posts)
+6. PARTNERSHIPS: Who to co-launch with and how to approach them
+7. METRICS: What to track daily, weekly, monthly
+8. CONTINGENCY: If launch underperforms, what's Plan B?
+
+Specific deliverable: Detailed launch checklist with owner and deadline for each item.<button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> The best GTM strategies have a narrow beachhead. Don't try to launch to everyone. Pick your first 100 customers and build the plan around reaching them specifically.</div>
+</div></div>
+</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#9</span><span class="prompt-title">Strategic Partnership Evaluator</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">Evaluate this potential partnership opportunity:
+
+Our business: <span class="var">{your_business}</span>
+Potential partner: <span class="var">{partner_name_and_description}</span>
+Partnership type: <span class="var">{type, e.g., "co-marketing, integration, reseller, JV"}</span>
+Their ask: <span class="var">{what_they_want}</span>
+Our goal: <span class="var">{what_we_want}</span>
+
+Analyze:
+1. STRATEGIC FIT (1-10): How aligned are goals and values?
+2. LEVERAGE ANALYSIS: Who needs whom more? Power dynamics?
+3. RISK ASSESSMENT: What could go wrong? Downside scenarios?
+4. VALUE CREATION: What value is created that neither could create alone?
+5. DEAL STRUCTURE: Recommended terms (rev share, exclusivity, term length)
+6. EXIT STRATEGY: How to unwind if it doesn't work?
+7. SUCCESS METRICS: How do both sides measure success?
+8. NEGOTIATION STRATEGY: Our BATNA, their BATNA, zone of agreement
+
+Recommendation: Proceed / Negotiate harder / Walk away
+If proceed: Proposed deal terms and negotiation talking points.<button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> Include the partner's recent news, funding, or strategic moves. Context about their current priorities helps assess alignment and urgency.</div>
+</div></div>
+</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#10</span><span class="prompt-title">Industry Trend Analyzer & Opportunity Spotter</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">Analyze emerging trends in <span class="var">{industry}</span> and identify business opportunities.
+
+Current landscape:
+- Dominant players: <span class="var">{top_companies}</span>
+- Recent disruptions: <span class="var">{recent_changes}</span>
+- Technology shifts: <span class="var">{relevant_tech}</span>
+- Regulatory changes: <span class="var">{regulations}</span>
+
+Analyze:
+1. MEGA TRENDS (3-5 year horizon):
+   - What structural shifts are reshaping this industry?
+   - Which trends are real vs hype? (evidence-based assessment)
+
+2. EMERGING OPPORTUNITIES:
+   - Underserved segments created by these trends
+   - New business models becoming viable
+   - Technology-enabled capabilities that didn't exist 2 years ago
+
+3. THREAT ASSESSMENT:
+   - What could make current business models obsolete?
+   - Where are incumbents most vulnerable?
+   - Black swan risks to monitor
+
+4. OPPORTUNITY RANKING: Top 5 opportunities ranked by:
+   - Market size potential
+   - Timing (too early / just right / late)
+   - Barrier to entry
+   - Required capabilities
+   - Capital requirements
+
+For each opportunity: One-paragraph description, estimated timeline, and first step to validate it.<button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> Name specific companies, technologies, and regulations. Generic industry analysis is less useful than specific, named analysis.</div>
+</div></div>
+</div>
+
+<!-- LOCKED -->
+<div class="category-label">Section 2: Growth & Scaling (Prompts 11-20)</div>
+<div class="locked-overlay">
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#11</span><span class="prompt-title">Growth Flywheel Designer</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#12</span><span class="prompt-title">Customer Retention & Churn Reduction Playbook</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#13</span><span class="prompt-title">Referral Program Architect</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#14</span><span class="prompt-title">Revenue Diversification Strategy</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#15</span><span class="prompt-title">Expansion into New Markets Framework</span><span class="prompt-toggle">&#128274;</span></div></div>
+</div>
+
+<div class="category-label">Section 3: Product Development (Prompts 21-30)</div>
+<div class="locked-overlay">
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#21</span><span class="prompt-title">Product Roadmap Prioritization (RICE Framework)</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#22</span><span class="prompt-title">Feature vs Product Decision Matrix</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#23</span><span class="prompt-title">MVP Scoping for New Ideas</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#24</span><span class="prompt-title">User Feedback Synthesizer & Action Planner</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#25</span><span class="prompt-title">Product-Market Fit Measurement Dashboard</span><span class="prompt-toggle">&#128274;</span></div></div>
+</div>
+
+<div class="category-label">Section 4: Team & Operations (Prompts 31-40)</div>
+<div class="locked-overlay">
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#31</span><span class="prompt-title">Hiring Plan & Job Description Writer</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#32</span><span class="prompt-title">OKR Framework Builder</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#33</span><span class="prompt-title">Process Automation Opportunity Finder</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#34</span><span class="prompt-title">Team Structure & Org Design Advisor</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#35</span><span class="prompt-title">Performance Review Framework Designer</span><span class="prompt-toggle">&#128274;</span></div></div>
+</div>
+
+<div class="category-label">Section 5: Finance & Fundraising (Prompts 41-50)</div>
+<div class="locked-overlay">
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#41</span><span class="prompt-title">Investor Pitch Deck Narrative Builder</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#42</span><span class="prompt-title">Financial Model Scenario Planner</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#43</span><span class="prompt-title">Cash Flow Optimization Strategy</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#44</span><span class="prompt-title">Bootstrapping vs Fundraising Decision Framework</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#45</span><span class="prompt-title">Board Meeting Preparation & Deck Builder</span><span class="prompt-toggle">&#128274;</span></div></div>
+</div>
+
+<div class="unlock-card">
+<h3>Unlock All 50 Business Strategy Prompts</h3>
+<p>Get growth frameworks, product development tools, team management prompts, and financial planning templates.</p>
+<div class="unlock-price">$9</div>
+<button class="unlock-btn" onclick="openCheckout()">Get Full Pack — $9</button>
+</div>
+</section>
+
+<footer><p>PromptVault &mdash; A <a href="https://nextool.app">NexTool</a> product. <a href="../">Back to all packs</a></p></footer>
+
+<div class="checkout-overlay" id="checkoutOverlay">
+<div class="checkout-modal">
+<button class="checkout-close" onclick="closeCheckout()">&times;</button>
+<div id="checkoutForm">
+<div class="checkout-title">Get Business Strategy Pack</div>
+<div class="checkout-item">50 Expert Business Prompts — $9</div>
+<div class="checkout-field"><label>Your Name</label><input type="text" id="coName" placeholder="John Doe"></div>
+<div class="checkout-field"><label>Email (for delivery)</label><input type="email" id="coEmail" placeholder="john@example.com"></div>
+<button class="checkout-pay" id="checkoutPay">Pay with PayPal — $9</button>
+<p style="font-size:.75rem;color:var(--text2);text-align:center;margin-top:.8rem">Prompts delivered to your email within 1 hour.</p>
+</div>
+<div class="checkout-success" id="checkoutSuccess"><h3>Payment Initiated!</h3><p>Your prompts will be sent to your email within 1 hour after PayPal payment.</p></div>
+</div>
+</div>
+
+<script>
+var PAYPAL_USERNAME='YOUR_PAYPAL_USERNAME';
+function togglePrompt(card){if(card.querySelector('.prompt-toggle').textContent==='🔒')return;var wasOpen=card.classList.contains('open');document.querySelectorAll('.prompt-card.open').forEach(function(c){c.classList.remove('open');c.querySelector('.prompt-body').style.maxHeight=null});if(!wasOpen){card.classList.add('open');var body=card.querySelector('.prompt-body');body.style.maxHeight=body.scrollHeight+'px'}}
+function copyPrompt(btn){var text=btn.parentElement.innerText.replace('Copy','').trim();navigator.clipboard.writeText(text).then(function(){btn.textContent='Copied!';setTimeout(function(){btn.textContent='Copy'},2000)})}
+function openCheckout(){document.getElementById('checkoutOverlay').classList.add('active');document.getElementById('checkoutForm').style.display='block';document.getElementById('checkoutSuccess').style.display='none'}
+function closeCheckout(){document.getElementById('checkoutOverlay').classList.remove('active')}
+document.getElementById('checkoutOverlay').addEventListener('click',function(e){if(e.target===this)closeCheckout()});
+document.getElementById('checkoutPay').addEventListener('click',function(){var n=document.getElementById('coName').value.trim(),e=document.getElementById('coEmail').value.trim();if(!n||!e){alert('Please fill in name and email.');return}var orders=JSON.parse(localStorage.getItem('pv_orders')||'[]');orders.push({id:'PV-BS-'+Date.now().toString(36).toUpperCase(),item:'Business Strategy',price:'9',name:n,email:e,date:new Date().toISOString()});localStorage.setItem('pv_orders',JSON.stringify(orders));window.open('https://paypal.me/'+PAYPAL_USERNAME+'/9USD','_blank');document.getElementById('checkoutForm').style.display='none';document.getElementById('checkoutSuccess').style.display='block'});
+</script>
+</body>
+</html>

@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marketing Pro — 50 Expert AI Prompts for Digital Marketers | PromptVault</title>
+<meta name="description" content="50 expert-level AI prompts for digital marketers. Content strategy, social media, email marketing, ad copy, analytics & more. Works with ChatGPT, Claude, Gemini. $9.">
+<meta name="keywords" content="marketing prompts, AI marketing prompts, content strategy prompts, social media prompts, email marketing prompts, ChatGPT for marketers">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://christian140903-sudo.github.io/prompt-vault/prompts/marketing-pro.html">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#07070a;--surface:#0e0e14;--surface2:#151520;--border:rgba(255,255,255,.06);--text:#e5e5e5;--text2:#888;--accent:#ec4899;--accent2:#f472b6;--gold:#fbbf24;--emerald:#10b981;--blue:#3b82f6}
+body{font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+.bg-noise{position:fixed;inset:0;opacity:.03;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");pointer-events:none}
+header{position:sticky;top:0;z-index:100;padding:1rem 2rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border);backdrop-filter:blur(16px);background:rgba(7,7,10,.8)}
+.logo{font-size:1.2rem;font-weight:800;text-decoration:none;color:var(--text);display:flex;align-items:center;gap:.5rem}
+.logo-mark{width:28px;height:28px;background:linear-gradient(135deg,var(--accent),var(--gold));border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:900;color:#fff}
+.back-link{color:var(--accent2);font-size:.85rem;text-decoration:none;font-weight:500}
+.back-link:hover{text-decoration:underline}
+.hero{text-align:center;padding:4rem 2rem 3rem;max-width:700px;margin:0 auto}
+.hero-icon{width:64px;height:64px;background:linear-gradient(135deg,rgba(236,72,153,.2),rgba(244,114,182,.2));border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:1.8rem;margin:0 auto 1.5rem}
+.hero h1{font-size:2.5rem;font-weight:900;letter-spacing:-1.5px;margin-bottom:1rem}
+.hero h1 span{background:linear-gradient(135deg,var(--accent2),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero p{color:var(--text2);font-size:1rem;line-height:1.7;margin-bottom:1.5rem}
+.hero-meta{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}
+.hero-meta-item{font-size:.85rem;color:var(--text2)}
+.hero-meta-item strong{color:var(--accent2)}
+.buy-bar{position:sticky;top:60px;z-index:90;padding:1rem 2rem;background:rgba(7,7,10,.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.buy-bar-info{font-size:.9rem;font-weight:600}
+.buy-bar-price{color:var(--accent2);font-size:1.1rem;font-weight:800}
+.buy-btn{background:var(--accent);color:#fff;padding:.6rem 1.5rem;border-radius:8px;font-size:.85rem;font-weight:700;border:none;cursor:pointer;transition:all .2s}
+.buy-btn:hover{background:var(--accent2);transform:translateY(-1px)}
+.prompts{max-width:800px;margin:0 auto;padding:2rem}
+.category-label{font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--accent2);font-weight:700;margin:2.5rem 0 1rem;padding-bottom:.5rem;border-bottom:1px solid var(--border)}
+.prompt-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;margin-bottom:1rem;overflow:hidden;transition:border-color .2s}
+.prompt-card:hover{border-color:rgba(236,72,153,.2)}
+.prompt-header{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.25rem;cursor:pointer}
+.prompt-num{font-size:.7rem;font-weight:700;color:var(--accent);background:rgba(236,72,153,.1);padding:.2rem .5rem;border-radius:4px;margin-right:.75rem}
+.prompt-title{flex:1;font-size:.95rem;font-weight:600}
+.prompt-toggle{color:var(--text2);font-size:1.2rem;transition:transform .3s}
+.prompt-card.open .prompt-toggle{transform:rotate(45deg);color:var(--accent2)}
+.prompt-body{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.prompt-body-inner{padding:0 1.25rem 1.25rem}
+.prompt-text{font-family:'SF Mono',Monaco,monospace;font-size:.82rem;color:var(--text);line-height:1.8;white-space:pre-wrap;background:var(--surface2);padding:1rem;border-radius:8px;border:1px solid var(--border);position:relative}
+.prompt-text .var{color:var(--gold);font-weight:600}
+.prompt-tip{margin-top:.75rem;padding:.75rem 1rem;background:rgba(236,72,153,.05);border:1px solid rgba(236,72,153,.1);border-radius:8px;font-size:.8rem;color:var(--text2);line-height:1.6}
+.prompt-tip strong{color:var(--accent2)}
+.copy-btn{position:absolute;top:.5rem;right:.5rem;background:var(--accent);color:#fff;border:none;padding:.35rem .75rem;border-radius:6px;font-size:.7rem;font-weight:600;cursor:pointer;opacity:.7;transition:opacity .2s}
+.copy-btn:hover{opacity:1}
+.locked-overlay{position:relative}
+.locked-overlay::after{content:'';position:absolute;bottom:0;left:0;right:0;height:80%;background:linear-gradient(to bottom,transparent,var(--bg));pointer-events:none}
+.unlock-card{text-align:center;padding:3rem 2rem;background:linear-gradient(135deg,rgba(236,72,153,.06),rgba(251,191,36,.06));border:1px solid rgba(236,72,153,.15);border-radius:16px;margin:2rem auto;max-width:500px}
+.unlock-card h3{font-size:1.3rem;font-weight:800;margin-bottom:.5rem}
+.unlock-card p{color:var(--text2);margin-bottom:1.5rem;font-size:.9rem}
+.unlock-price{font-size:2rem;font-weight:900;color:var(--accent2);margin-bottom:1rem}
+.unlock-btn{display:inline-block;background:linear-gradient(135deg,var(--accent),var(--gold));color:#fff;padding:.85rem 2.5rem;border-radius:10px;font-size:1rem;font-weight:700;border:none;cursor:pointer;transition:all .2s}
+.unlock-btn:hover{transform:scale(1.03);box-shadow:0 8px 25px rgba(236,72,153,.3)}
+.checkout-overlay{display:none;position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,.7);backdrop-filter:blur(8px);align-items:center;justify-content:center}
+.checkout-overlay.active{display:flex}
+.checkout-modal{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:2.5rem;max-width:440px;width:90%;position:relative}
+.checkout-close{position:absolute;top:1rem;right:1rem;background:none;border:none;color:var(--text2);font-size:1.5rem;cursor:pointer}
+.checkout-title{font-size:1.3rem;font-weight:800;margin-bottom:.5rem}
+.checkout-item{font-size:.9rem;color:var(--accent2);margin-bottom:1.5rem}
+.checkout-field{margin-bottom:1rem}
+.checkout-field label{display:block;font-size:.8rem;color:var(--text2);margin-bottom:.4rem}
+.checkout-field input{width:100%;padding:.8rem 1rem;background:var(--surface2);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:.9rem;outline:none}
+.checkout-field input:focus{border-color:var(--accent)}
+.checkout-pay{width:100%;padding:.9rem;background:var(--accent);color:#fff;border:none;border-radius:10px;font-size:1rem;font-weight:700;cursor:pointer;margin-top:.5rem}
+.checkout-pay:hover{background:var(--accent2)}
+.checkout-success{display:none;text-align:center;padding:2rem 0}
+.checkout-success h3{color:var(--emerald);margin-bottom:.5rem}
+.checkout-success p{color:var(--text2);font-size:.9rem}
+footer{border-top:1px solid var(--border);padding:2rem;text-align:center;color:var(--text2);font-size:.85rem}
+footer a{color:var(--accent2);text-decoration:none}
+@media(max-width:768px){.hero h1{font-size:1.8rem}.buy-bar{flex-wrap:wrap;justify-content:center}.prompt-text{font-size:.75rem}}
+</style>
+</head>
+<body>
+<div class="bg-noise"></div>
+
+<header>
+<a href="../" class="logo"><div class="logo-mark">PV</div> PromptVault</a>
+<a href="../" class="back-link">All Packs</a>
+</header>
+
+<section class="hero">
+<div class="hero-icon">&#128640;</div>
+<h1>Marketing <span>Pro</span></h1>
+<p>50 expert-level AI prompts for digital marketers. From content strategy and social media to email campaigns, ad copy, and analytics reporting. Battle-tested frameworks that produce real results.</p>
+<div class="hero-meta">
+<div class="hero-meta-item"><strong>50</strong> Prompts</div>
+<div class="hero-meta-item"><strong>5</strong> Categories</div>
+<div class="hero-meta-item"><strong>10</strong> Free Preview</div>
+</div>
+</section>
+
+<div class="buy-bar">
+<div><span class="buy-bar-info">Marketing Pro</span> &mdash; <span class="buy-bar-price">$9</span></div>
+<button class="buy-btn" onclick="openCheckout()">Get Full Pack</button>
+</div>
+
+<section class="prompts">
+<div class="category-label">Section 1: Content Strategy (Prompts 1-10) &mdash; Free Preview</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#1</span><span class="prompt-title">Quarterly Content Calendar with Pillar-Cluster Architecture</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">You are a senior content strategist with 15 years of experience in <span class="var">{industry}</span>.
+
+Build a comprehensive 90-day content calendar for <span class="var">{brand_name}</span>, a <span class="var">{business_type}</span> targeting <span class="var">{target_audience}</span>.
+
+Context:
+- Primary business goals this quarter: <span class="var">{quarterly_goals}</span>
+- Top 3 product/service lines to promote: <span class="var">{products_or_services}</span>
+- Competitor content gaps we've identified: <span class="var">{competitor_gaps}</span>
+- Available content formats: <span class="var">{available_formats, e.g., blog, video, podcast, infographic}</span>
+- Publishing capacity: <span class="var">{posts_per_week}</span> posts per week across <span class="var">{number_of_channels}</span> channels
+
+Requirements:
+1. Define 3-4 content pillars that align with business goals
+2. For each pillar, create a topic cluster with 1 pillar page and 6-8 cluster articles
+3. Map each piece to a buyer journey stage (Awareness, Consideration, Decision)
+4. Include content repurposing chains (blog -> social carousel -> email -> video script)
+5. Flag 5 "tentpole" content pieces that drive outsized results
+6. Include seasonal hooks, industry events, and trending topic slots
+7. Assign a primary KPI to each content piece
+
+Output Format:
+- Month-by-month table: Week | Content Title | Pillar | Format | Channel | Buyer Stage | KPI | Repurposing Chain
+- Executive summary paragraph
+- Content production timeline with deadlines and dependencies<button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> Feed the AI your Google Analytics top pages and Search Console queries first. The more real data you provide about what already works, the sharper the calendar will be.</div>
+</div></div>
+</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#2</span><span class="prompt-title">Content Audit & Gap Analysis</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">You are a content audit specialist. Analyze the following content inventory for <span class="var">{brand_name}</span> and produce a strategic gap analysis.
+
+Current Content Inventory:
+<span class="var">{paste list of existing content titles and URLs}</span>
+
+Business Context:
+- Industry: <span class="var">{industry}</span>
+- Target personas: <span class="var">{persona_1}</span>, <span class="var">{persona_2}</span>, <span class="var">{persona_3}</span>
+- Main competitors: <span class="var">{competitor_1}</span>, <span class="var">{competitor_2}</span>, <span class="var">{competitor_3}</span>
+- Primary conversion goal: <span class="var">{conversion_goal}</span>
+- Top 10 target keywords: <span class="var">{keyword_list}</span>
+
+Perform:
+1. CONTENT SCORING: Rate each piece 1-5 for relevance, SEO potential, conversion clarity, freshness, engagement
+2. GAP IDENTIFICATION: Competitor topics we miss, underserved buyer stages, underused formats, keywords without content
+3. ACTION PLAN: Content to UPDATE, CONSOLIDATE, CREATE, and RETIRE
+
+Output: Scoring matrix table + gap analysis summary + 30-day action plan ranked by impact/effort<button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> Export your sitemap or blog index and paste the full list. Even partial data produces better results than vague descriptions.</div>
+</div></div>
+</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#3</span><span class="prompt-title">Audience Persona Deep-Dive with Content Mapping</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">You are a consumer psychologist and content strategist. Build a comprehensive buyer persona and map content touchpoints for <span class="var">{brand_name}</span>.
+
+Business: <span class="var">{business_description}</span>
+Product/Service: <span class="var">{product_description}</span>
+Price point: <span class="var">{price_range}</span>
+Sales cycle length: <span class="var">{sales_cycle}</span>
+
+Known audience data:
+- Demographics: <span class="var">{age_range, location, income, job_titles}</span>
+- Top traffic sources: <span class="var">{traffic_sources}</span>
+- Most engaged content topics: <span class="var">{popular_topics}</span>
+- Common sales objections: <span class="var">{sales_objections}</span>
+- Customer testimonial themes: <span class="var">{what_customers_praise}</span>
+
+Build the persona including:
+1. IDENTITY PROFILE: Name, age, role, goals, decision-making style
+2. PAIN ARCHITECTURE: Surface pains, deeper pains, root pains, pain triggers
+3. INFORMATION DIET: Where they learn, who they trust, how they research
+4. CONTENT TOUCHPOINT MAP: For each buyer stage — trigger, questions, best format, channel, natural CTA
+
+Output: Structured persona document + visual touchpoint journey table<button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> Include 5-10 real customer quotes from interviews or support tickets. Real voice-of-customer data dramatically improves persona accuracy.</div>
+</div></div>
+</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#4</span><span class="prompt-title">Thought Leadership Article Framework</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">You are a ghostwriter for C-level executives. Create a thought leadership article framework for <span class="var">{author_name}</span>, <span class="var">{author_title}</span> at <span class="var">{company_name}</span>.
+
+Topic: <span class="var">{article_topic}</span>
+Author's unique thesis: <span class="var">{core_argument}</span>
+Target publication: <span class="var">{publication, e.g., LinkedIn, company blog}</span>
+Target audience: <span class="var">{audience}</span>
+Word count: <span class="var">{word_count}</span>
+
+Build:
+1. HOOK (first 100 words): 3 alternative openings — counterintuitive insight, vivid anecdote, bold claim
+2. THESIS STATEMENT: One sentence + "what most people get wrong" framing
+3. BODY (3-5 sections): Subhead, key argument, supporting evidence needed, transitions
+4. COUNTERARGUMENT: Strongest objection + honest rebuttal
+5. CLOSE: Forward-looking implication + actionable takeaway + memorable final line
+6. DISTRIBUTION: 5 social media excerpts, 3 comment responses, email teaser copy
+
+Output: Complete framework document ready for the author to flesh out<button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> Include the author's past articles or LinkedIn posts so the AI can match their voice and build on their established positions.</div>
+</div></div>
+</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#5</span><span class="prompt-title">SEO Blog Post Generator with E-E-A-T Signals</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">You are an SEO content writer who specializes in creating content that ranks AND converts. Write a comprehensive blog post for <span class="var">{brand_name}</span>.
+
+Target keyword: <span class="var">{primary_keyword}</span>
+Secondary keywords: <span class="var">{secondary_keywords}</span>
+Search intent: <span class="var">{informational / commercial / transactional / navigational}</span>
+Target word count: <span class="var">{word_count}</span>
+Current top 3 ranking articles for this keyword: <span class="var">{competitor_urls_or_summaries}</span>
+
+Requirements:
+1. Title tag (under 60 chars) with primary keyword front-loaded
+2. Meta description (under 155 chars) with clear value prop and CTA
+3. H1 that differs from title tag but targets same intent
+4. Logical H2/H3 structure covering all subtopics in top results PLUS gaps they miss
+5. E-E-A-T signals: cite specific data sources, include expert quotes, show first-hand experience
+6. Internal link suggestions: <span class="var">{existing_pages_to_link_to}</span>
+7. Featured snippet optimization: include a definition box, comparison table, or step list
+8. Natural keyword integration (no stuffing) — aim for 1-2% density
+9. Strong CTA aligned with <span class="var">{conversion_goal}</span>
+
+Output: Complete blog post with all HTML heading tags, meta tags, and internal link placements marked<button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> Paste the top 3 ranking articles' outlines so the AI knows exactly what to beat. Include "People Also Ask" questions from Google.</div>
+</div></div>
+</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#6</span><span class="prompt-title">Social Media Campaign Builder (Multi-Platform)</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">You are a social media strategist managing campaigns for <span class="var">{brand_name}</span>. Design a complete multi-platform campaign.
+
+Campaign goal: <span class="var">{goal, e.g., "launch awareness", "lead generation", "event promotion"}</span>
+Budget: <span class="var">{budget}</span>
+Timeline: <span class="var">{start_date}</span> to <span class="var">{end_date}</span>
+Platforms: <span class="var">{platforms, e.g., Instagram, LinkedIn, Twitter, TikTok}</span>
+Target audience: <span class="var">{audience_description}</span>
+Key message: <span class="var">{core_message}</span>
+Brand voice: <span class="var">{voice_description}</span>
+
+Create:
+1. CAMPAIGN CONCEPT: Theme name, visual direction, hashtag strategy
+2. CONTENT CALENDAR: For each platform, 3 posts per week with exact copy, format (carousel, reel, story, text), and posting time
+3. ENGAGEMENT TACTICS: Comment strategies, DM scripts, community management playbook
+4. PAID AMPLIFICATION: Which organic posts to boost, audience targeting, budget allocation per platform
+5. INFLUENCER/UGC: 3 collaboration ideas with outreach templates
+6. MEASUREMENT: KPIs per platform, tracking setup, weekly reporting template
+
+Output: Complete campaign brief with all content pre-written and ready to schedule<button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> Share your top 3 best-performing posts from each platform so the AI understands what resonates with your audience.</div>
+</div></div>
+</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#7</span><span class="prompt-title">Email Sequence Architect (Welcome / Nurture / Launch)</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">You are an email marketing expert. Build a complete email sequence for <span class="var">{brand_name}</span>.
+
+Sequence type: <span class="var">{welcome / nurture / product launch / re-engagement / onboarding}</span>
+Number of emails: <span class="var">{number}</span>
+Sending cadence: <span class="var">{cadence, e.g., "daily for 5 days then weekly"}</span>
+Subscriber source: <span class="var">{how_they_opted_in}</span>
+End goal: <span class="var">{desired_action}</span>
+
+Product/Offer details:
+- Name: <span class="var">{product_name}</span>
+- Price: <span class="var">{price}</span>
+- Key benefits: <span class="var">{top_3_benefits}</span>
+- Common objections: <span class="var">{objections}</span>
+- Social proof available: <span class="var">{testimonials, case studies, numbers}</span>
+
+For EACH email, provide:
+1. Subject line (under 50 chars) + 2 A/B alternatives
+2. Preview text (under 90 chars)
+3. Full email body copy with formatting markers
+4. Primary CTA button text
+5. P.S. line
+6. Optimal send time and day
+7. Segmentation notes (who should/shouldn't receive this)
+
+Output: Complete sequence with all emails written, subject lines tested, and sending logic mapped<button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> Include your current open rate and click rate benchmarks so the AI calibrates for your audience's engagement level.</div>
+</div></div>
+</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#8</span><span class="prompt-title">Ad Copy Generator (Google + Meta + LinkedIn)</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">You are a performance marketing copywriter. Generate ad copy variations for <span class="var">{brand_name}</span> across multiple platforms.
+
+Product/Service: <span class="var">{product_description}</span>
+Target audience: <span class="var">{audience}</span>
+Unique value proposition: <span class="var">{uvp}</span>
+Competitor positioning: <span class="var">{how_we_differ}</span>
+Landing page URL: <span class="var">{url}</span>
+Monthly ad budget: <span class="var">{budget}</span>
+
+Generate for each platform:
+
+GOOGLE ADS (Search):
+- 5 responsive search ad variations (15 headlines, 4 descriptions each)
+- 3 keyword themes with match type recommendations
+- Negative keyword list
+
+META ADS (Facebook/Instagram):
+- 3 primary text variations (short, medium, long)
+- 5 headline options
+- 3 description options
+- Creative direction notes for each variation
+
+LINKEDIN ADS:
+- 3 sponsored content variations
+- 2 message ad templates
+- Targeting criteria recommendations
+
+For ALL copy:
+- Use power words and emotional triggers appropriate for the audience
+- Include social proof where possible
+- A/B test hypotheses for each variation
+- Compliance notes (no misleading claims)
+
+Output: Copy doc organized by platform, ready to paste into ad managers<button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> Paste your best-performing ad copy so far. The AI will analyze what works and create variations that build on proven patterns.</div>
+</div></div>
+</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#9</span><span class="prompt-title">Competitor Content & Positioning Analysis</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">You are a competitive intelligence analyst. Perform a deep competitive content and positioning analysis.
+
+Our brand: <span class="var">{brand_name}</span> — <span class="var">{brand_description}</span>
+Our positioning: <span class="var">{current_positioning}</span>
+
+Competitors to analyze:
+1. <span class="var">{competitor_1}</span> — <span class="var">{their_website}</span>
+2. <span class="var">{competitor_2}</span> — <span class="var">{their_website}</span>
+3. <span class="var">{competitor_3}</span> — <span class="var">{their_website}</span>
+
+For EACH competitor, analyze:
+1. MESSAGING: Headline, tagline, value proposition, tone of voice, key claims
+2. CONTENT STRATEGY: Blog frequency, topics, formats, top-performing content (if visible)
+3. SEO APPROACH: Keywords they rank for that we don't, content gaps, link-building tactics
+4. SOCIAL PRESENCE: Platforms, posting frequency, engagement rates, content themes
+5. CONVERSION STRATEGY: CTAs, lead magnets, pricing presentation, trust signals
+6. WEAKNESSES: Where their content/messaging falls short
+
+Then provide:
+- POSITIONING MAP: 2x2 matrix plotting all competitors on key dimensions
+- OPPORTUNITY REPORT: 5 specific content/messaging opportunities we can own
+- DIFFERENTIATION STRATEGY: How to position against each competitor specifically
+- 90-DAY ATTACK PLAN: Prioritized actions to gain competitive advantage
+
+Output: Comprehensive competitive analysis document with actionable strategies<button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> Run this prompt once per quarter. Paste actual competitor homepage copy and their last 10 blog titles for the most accurate analysis.</div>
+</div></div>
+</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#10</span><span class="prompt-title">Marketing Analytics Report Generator</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">You are a marketing analytics expert. Generate a comprehensive performance report and strategic recommendations.
+
+Reporting period: <span class="var">{date_range}</span>
+Business: <span class="var">{brand_name}</span> in <span class="var">{industry}</span>
+
+Raw metrics (paste what you have):
+- Website: <span class="var">{sessions, users, bounce rate, pages/session, conversion rate}</span>
+- Email: <span class="var">{list_size, open_rate, click_rate, unsubscribes}</span>
+- Social: <span class="var">{followers, engagement_rate, reach, top_posts}</span>
+- Ads: <span class="var">{spend, impressions, clicks, CTR, CPC, conversions, ROAS}</span>
+- Revenue: <span class="var">{total_revenue, MQLs, SQLs, customers_acquired, CAC, LTV}</span>
+
+Previous period comparison: <span class="var">{same metrics from prior period if available}</span>
+Goals: <span class="var">{quarterly_targets}</span>
+
+Generate:
+1. EXECUTIVE SUMMARY: 3-sentence overview for leadership (wins, concerns, recommendations)
+2. CHANNEL PERFORMANCE: Each channel scored on efficiency, growth trajectory, and ROI
+3. FUNNEL ANALYSIS: Where leads drop off, conversion rate by stage, bottleneck identification
+4. CONTENT PERFORMANCE: Top 5 content pieces by impact, why they worked, patterns to replicate
+5. BUDGET REALLOCATION: Where to shift spend based on performance data
+6. NEXT PERIOD PRIORITIES: Top 3 actions ranked by expected impact
+7. RISK FLAGS: Metrics trending in wrong direction that need immediate attention
+
+Output: Board-ready marketing report with visualizations described (for chart creation) and specific next steps with owners<button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> Export raw data from Google Analytics, your email platform, and ad dashboards. The more numbers you give, the more specific the insights.</div>
+</div></div>
+</div>
+
+<!-- LOCKED SECTION -->
+<div class="category-label">Section 2: Social Media Mastery (Prompts 11-20)</div>
+<div class="locked-overlay">
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#11</span><span class="prompt-title">Viral LinkedIn Post Framework</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#12</span><span class="prompt-title">Instagram Carousel Content System</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#13</span><span class="prompt-title">TikTok/Reels Hook Script Generator</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#14</span><span class="prompt-title">Community Management Playbook Builder</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#15</span><span class="prompt-title">Social Media Crisis Response Protocol</span><span class="prompt-toggle">&#128274;</span></div></div>
+</div>
+
+<div class="category-label">Section 3: Email Marketing & Automation (Prompts 21-30)</div>
+<div class="locked-overlay">
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#21</span><span class="prompt-title">Cart Abandonment Recovery Sequence</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#22</span><span class="prompt-title">Newsletter Content Calendar Generator</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#23</span><span class="prompt-title">A/B Test Hypothesis Generator for Email</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#24</span><span class="prompt-title">Segmentation Strategy & Automation Flow</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#25</span><span class="prompt-title">Re-Engagement Campaign for Cold Subscribers</span><span class="prompt-toggle">&#128274;</span></div></div>
+</div>
+
+<div class="category-label">Section 4: Advertising & Paid Media (Prompts 31-40)</div>
+<div class="locked-overlay">
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#31</span><span class="prompt-title">Landing Page Copy Optimizer</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#32</span><span class="prompt-title">Retargeting Campaign Architect</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#33</span><span class="prompt-title">Ad Creative Brief Generator</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#34</span><span class="prompt-title">Audience Lookalike Strategy Builder</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#35</span><span class="prompt-title">Budget Allocation Optimizer Across Channels</span><span class="prompt-toggle">&#128274;</span></div></div>
+</div>
+
+<div class="category-label">Section 5: Analytics & Conversion (Prompts 41-50)</div>
+<div class="locked-overlay">
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#41</span><span class="prompt-title">Conversion Rate Audit Checklist</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#42</span><span class="prompt-title">Customer Journey Attribution Model</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#43</span><span class="prompt-title">Marketing Dashboard Designer</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#44</span><span class="prompt-title">Growth Experiment Framework (ICE Scoring)</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#45</span><span class="prompt-title">Quarterly Marketing ROI Calculator</span><span class="prompt-toggle">&#128274;</span></div></div>
+</div>
+
+<div class="unlock-card">
+<h3>Unlock All 50 Marketing Prompts</h3>
+<p>Get the complete pack with all 50 expert-level prompts, including social media mastery, email automation, paid media strategies, and analytics frameworks.</p>
+<div class="unlock-price">$9</div>
+<button class="unlock-btn" onclick="openCheckout()">Get Full Pack — $9</button>
+</div>
+</section>
+
+<footer>
+<p>PromptVault &mdash; A <a href="https://nextool.app">NexTool</a> product. <a href="../">Back to all packs</a></p>
+</footer>
+
+<div class="checkout-overlay" id="checkoutOverlay">
+<div class="checkout-modal">
+<button class="checkout-close" onclick="closeCheckout()">&times;</button>
+<div id="checkoutForm">
+<div class="checkout-title">Get Marketing Pro</div>
+<div class="checkout-item">50 Expert Marketing Prompts — $9</div>
+<div class="checkout-field"><label>Your Name</label><input type="text" id="coName" placeholder="John Doe"></div>
+<div class="checkout-field"><label>Email (for delivery)</label><input type="email" id="coEmail" placeholder="john@example.com"></div>
+<button class="checkout-pay" id="checkoutPay">Pay with PayPal — $9</button>
+<p style="font-size:.75rem;color:var(--text2);text-align:center;margin-top:.8rem">Prompts delivered to your email within 1 hour after payment.</p>
+</div>
+<div class="checkout-success" id="checkoutSuccess">
+<h3>Payment Initiated!</h3>
+<p>After PayPal payment, your prompts will be sent to your email within 1 hour.</p>
+</div>
+</div>
+</div>
+
+<script>
+var PAYPAL_USERNAME='YOUR_PAYPAL_USERNAME';
+function togglePrompt(card){if(card.querySelector('.prompt-toggle').textContent==='\u{1F512}')return;var wasOpen=card.classList.contains('open');document.querySelectorAll('.prompt-card.open').forEach(function(c){c.classList.remove('open');c.querySelector('.prompt-body').style.maxHeight=null});if(!wasOpen){card.classList.add('open');var body=card.querySelector('.prompt-body');body.style.maxHeight=body.scrollHeight+'px'}}
+function copyPrompt(btn){var text=btn.parentElement.innerText.replace('Copy','').trim();navigator.clipboard.writeText(text).then(function(){btn.textContent='Copied!';setTimeout(function(){btn.textContent='Copy'},2000)})}
+function openCheckout(){document.getElementById('checkoutOverlay').classList.add('active');document.getElementById('checkoutForm').style.display='block';document.getElementById('checkoutSuccess').style.display='none'}
+function closeCheckout(){document.getElementById('checkoutOverlay').classList.remove('active')}
+document.getElementById('checkoutOverlay').addEventListener('click',function(e){if(e.target===this)closeCheckout()});
+document.getElementById('checkoutPay').addEventListener('click',function(){var n=document.getElementById('coName').value.trim(),e=document.getElementById('coEmail').value.trim();if(!n||!e){alert('Please fill in name and email.');return}var orders=JSON.parse(localStorage.getItem('pv_orders')||'[]');orders.push({id:'PV-MP-'+Date.now().toString(36).toUpperCase(),item:'Marketing Pro',price:'9',name:n,email:e,date:new Date().toISOString()});localStorage.setItem('pv_orders',JSON.stringify(orders));window.open('https://paypal.me/'+PAYPAL_USERNAME+'/9USD','_blank');document.getElementById('checkoutForm').style.display='none';document.getElementById('checkoutSuccess').style.display='block'});
+</script>
+</body>
+</html>

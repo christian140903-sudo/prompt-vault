@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Content Creator — 50 Expert AI Prompts for Content Professionals | PromptVault</title>
+<meta name="description" content="50 expert AI prompts for content creators. Blog writing, video scripts, social media, newsletters, SEO optimization & more. Works with ChatGPT, Claude, Gemini. $9.">
+<meta name="keywords" content="content creator prompts, AI writing prompts, blog writing prompts, video script prompts, social media prompts, SEO prompts">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://christian140903-sudo.github.io/prompt-vault/prompts/content-creator.html">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#07070a;--surface:#0e0e14;--surface2:#151520;--border:rgba(255,255,255,.06);--text:#e5e5e5;--text2:#888;--accent:#f59e0b;--accent2:#fbbf24;--gold:#fbbf24;--emerald:#10b981}
+body{font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+.bg-noise{position:fixed;inset:0;opacity:.03;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");pointer-events:none}
+header{position:sticky;top:0;z-index:100;padding:1rem 2rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border);backdrop-filter:blur(16px);background:rgba(7,7,10,.8)}
+.logo{font-size:1.2rem;font-weight:800;text-decoration:none;color:var(--text);display:flex;align-items:center;gap:.5rem}
+.logo-mark{width:28px;height:28px;background:linear-gradient(135deg,var(--accent),#ec4899);border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:900;color:#fff}
+.back-link{color:var(--accent2);font-size:.85rem;text-decoration:none;font-weight:500}
+.hero{text-align:center;padding:4rem 2rem 3rem;max-width:700px;margin:0 auto}
+.hero-icon{width:64px;height:64px;background:linear-gradient(135deg,rgba(245,158,11,.2),rgba(251,191,36,.2));border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:1.8rem;margin:0 auto 1.5rem}
+.hero h1{font-size:2.5rem;font-weight:900;letter-spacing:-1.5px;margin-bottom:1rem}
+.hero h1 span{background:linear-gradient(135deg,var(--accent2),#ec4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero p{color:var(--text2);font-size:1rem;line-height:1.7;margin-bottom:1.5rem}
+.hero-meta{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}
+.hero-meta-item{font-size:.85rem;color:var(--text2)}
+.hero-meta-item strong{color:var(--accent2)}
+.buy-bar{position:sticky;top:60px;z-index:90;padding:1rem 2rem;background:rgba(7,7,10,.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.buy-bar-info{font-size:.9rem;font-weight:600}
+.buy-bar-price{color:var(--accent2);font-size:1.1rem;font-weight:800}
+.buy-btn{background:var(--accent);color:#000;padding:.6rem 1.5rem;border-radius:8px;font-size:.85rem;font-weight:700;border:none;cursor:pointer;transition:all .2s}
+.buy-btn:hover{background:var(--accent2);transform:translateY(-1px)}
+.prompts{max-width:800px;margin:0 auto;padding:2rem}
+.category-label{font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--accent2);font-weight:700;margin:2.5rem 0 1rem;padding-bottom:.5rem;border-bottom:1px solid var(--border)}
+.prompt-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;margin-bottom:1rem;overflow:hidden;transition:border-color .2s}
+.prompt-card:hover{border-color:rgba(245,158,11,.2)}
+.prompt-header{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.25rem;cursor:pointer}
+.prompt-num{font-size:.7rem;font-weight:700;color:var(--accent);background:rgba(245,158,11,.1);padding:.2rem .5rem;border-radius:4px;margin-right:.75rem}
+.prompt-title{flex:1;font-size:.95rem;font-weight:600}
+.prompt-toggle{color:var(--text2);font-size:1.2rem;transition:transform .3s}
+.prompt-card.open .prompt-toggle{transform:rotate(45deg);color:var(--accent2)}
+.prompt-body{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.prompt-body-inner{padding:0 1.25rem 1.25rem}
+.prompt-text{font-family:'SF Mono',Monaco,monospace;font-size:.82rem;color:var(--text);line-height:1.8;white-space:pre-wrap;background:var(--surface2);padding:1rem;border-radius:8px;border:1px solid var(--border);position:relative}
+.prompt-text .var{color:var(--gold);font-weight:600}
+.prompt-tip{margin-top:.75rem;padding:.75rem 1rem;background:rgba(245,158,11,.05);border:1px solid rgba(245,158,11,.1);border-radius:8px;font-size:.8rem;color:var(--text2);line-height:1.6}
+.prompt-tip strong{color:var(--accent2)}
+.copy-btn{position:absolute;top:.5rem;right:.5rem;background:var(--accent);color:#000;border:none;padding:.35rem .75rem;border-radius:6px;font-size:.7rem;font-weight:600;cursor:pointer;opacity:.7;transition:opacity .2s}
+.copy-btn:hover{opacity:1}
+.locked-overlay{position:relative}
+.locked-overlay::after{content:'';position:absolute;bottom:0;left:0;right:0;height:80%;background:linear-gradient(to bottom,transparent,var(--bg));pointer-events:none}
+.unlock-card{text-align:center;padding:3rem 2rem;background:linear-gradient(135deg,rgba(245,158,11,.06),rgba(236,72,153,.06));border:1px solid rgba(245,158,11,.15);border-radius:16px;margin:2rem auto;max-width:500px}
+.unlock-card h3{font-size:1.3rem;font-weight:800;margin-bottom:.5rem}
+.unlock-card p{color:var(--text2);margin-bottom:1.5rem;font-size:.9rem}
+.unlock-price{font-size:2rem;font-weight:900;color:var(--accent2);margin-bottom:1rem}
+.unlock-btn{display:inline-block;background:linear-gradient(135deg,var(--accent),#ec4899);color:#fff;padding:.85rem 2.5rem;border-radius:10px;font-size:1rem;font-weight:700;border:none;cursor:pointer;transition:all .2s}
+.unlock-btn:hover{transform:scale(1.03);box-shadow:0 8px 25px rgba(245,158,11,.3)}
+.checkout-overlay{display:none;position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,.7);backdrop-filter:blur(8px);align-items:center;justify-content:center}
+.checkout-overlay.active{display:flex}
+.checkout-modal{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:2.5rem;max-width:440px;width:90%;position:relative}
+.checkout-close{position:absolute;top:1rem;right:1rem;background:none;border:none;color:var(--text2);font-size:1.5rem;cursor:pointer}
+.checkout-title{font-size:1.3rem;font-weight:800;margin-bottom:.5rem}
+.checkout-item{font-size:.9rem;color:var(--accent2);margin-bottom:1.5rem}
+.checkout-field{margin-bottom:1rem}
+.checkout-field label{display:block;font-size:.8rem;color:var(--text2);margin-bottom:.4rem}
+.checkout-field input{width:100%;padding:.8rem 1rem;background:var(--surface2);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:.9rem;outline:none}
+.checkout-field input:focus{border-color:var(--accent)}
+.checkout-pay{width:100%;padding:.9rem;background:var(--accent);color:#000;border:none;border-radius:10px;font-size:1rem;font-weight:700;cursor:pointer;margin-top:.5rem}
+.checkout-pay:hover{background:var(--accent2)}
+.checkout-success{display:none;text-align:center;padding:2rem 0}
+.checkout-success h3{color:var(--emerald);margin-bottom:.5rem}
+.checkout-success p{color:var(--text2);font-size:.9rem}
+footer{border-top:1px solid var(--border);padding:2rem;text-align:center;color:var(--text2);font-size:.85rem}
+footer a{color:var(--accent2);text-decoration:none}
+@media(max-width:768px){.hero h1{font-size:1.8rem}.buy-bar{flex-wrap:wrap;justify-content:center}}
+</style>
+</head>
+<body>
+<div class="bg-noise"></div>
+<header>
+<a href="../" class="logo"><div class="logo-mark">PV</div> PromptVault</a>
+<a href="../" class="back-link">&larr; All Packs</a>
+</header>
+
+<section class="hero">
+<div class="hero-icon">&#9997;</div>
+<h1>Content Creator<br><span>50 Expert Prompts</span></h1>
+<p>AI prompts designed for content professionals. Blog writing, video scripts, podcast outlines, social media strategy, newsletter creation, and SEO optimization. Each prompt includes variables for your specific niche and audience.</p>
+<div class="hero-meta">
+<div class="hero-meta-item"><strong>50</strong> Prompts</div>
+<div class="hero-meta-item"><strong>5</strong> Categories</div>
+<div class="hero-meta-item"><strong>PDF + TXT</strong> Format</div>
+<div class="hero-meta-item">Works with <strong>Any LLM</strong></div>
+</div>
+</section>
+
+<div class="buy-bar">
+<div><span class="buy-bar-info">Content Creator — 50 Prompts</span> <span class="buy-bar-price">$9</span></div>
+<button class="buy-btn" onclick="openCheckout()">Buy Full Pack — $9</button>
+</div>
+
+<section class="prompts">
+<div class="category-label">Section 1: Blog Writing & Long-Form Content (Prompts 1-10) — Free Preview</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#1</span><span class="prompt-title">SEO-Optimized Blog Post with E-E-A-T Signals</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">You are an expert content writer specializing in <span class="var">{niche}</span> with deep SEO knowledge.
+
+Write a comprehensive blog post on: <span class="var">{topic}</span>
+
+Target keyword: <span class="var">{primary_keyword}</span>
+Secondary keywords: <span class="var">{keyword_list}</span>
+Target word count: <span class="var">{word_count, e.g., 2000}</span>
+Target audience: <span class="var">{audience_description}</span>
+Tone: <span class="var">{tone, e.g., "professional but approachable"}</span>
+
+Requirements:
+1. H1 title with primary keyword (under 60 characters)
+2. Meta description (155 characters, compelling, keyword-included)
+3. Introduction with a hook that addresses a specific pain point
+4. H2 and H3 subheadings that include semantic keywords
+5. At least 3 E-E-A-T signals (experience, expertise, authority, trust)
+6. Actionable takeaways in each section
+7. Internal link suggestions: [link to: topic] placeholders
+8. Conclusion with clear CTA
+9. FAQ section (5 questions from "People Also Ask")
+10. Schema markup suggestions (FAQ, HowTo, or Article)
+
+Writing rules:
+- No fluff or filler sentences
+- Every paragraph earns its place
+- Use data, examples, and specifics over generalities
+- Write at a <span class="var">{reading_level, e.g., "8th grade"}</span> reading level
+- Active voice, short paragraphs (3-4 sentences max)<button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> Feed the AI your top-ranking competitor's article structure first. Ask it to analyze what's missing, then write a piece that fills those gaps.</div>
+</div></div>
+</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#2</span><span class="prompt-title">Content Repurposing Machine (1 Post to 12 Pieces)</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">You are a content strategist who maximizes ROI from every piece of content.
+
+Take this existing content and repurpose it into 12 different formats:
+
+Original content:
+<span class="var">{paste blog post, article, or transcript}</span>
+
+Platform accounts: <span class="var">{platforms, e.g., "Twitter, LinkedIn, Instagram, YouTube, TikTok, Newsletter"}</span>
+
+Generate:
+1. Twitter/X thread (8-12 tweets with hooks)
+2. LinkedIn post (storytelling format)
+3. Instagram carousel script (10 slides)
+4. YouTube Shorts/TikTok script (60 seconds)
+5. Newsletter section (3 paragraphs + CTA)
+6. Podcast talking points (5-minute segment)
+7. Infographic outline (key stats and flow)
+8. Quote graphics (5 shareable quotes)
+9. Reddit post (value-first, no self-promotion)
+10. Email subject lines (5 variations, A/B test ready)
+11. Pinterest pin descriptions (3 variations)
+12. Community post / discussion starter
+
+For each piece:
+- Platform-native format and tone
+- Optimal length for that platform
+- Best posting time suggestion
+- Hashtag recommendations where relevant<button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> Start with your highest-performing blog post. Repurposing proven content across platforms is the highest-ROI content strategy.</div>
+</div></div>
+</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#3</span><span class="prompt-title">Listicle with Unique Angles and Original Research</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">Write a compelling listicle: "<span class="var">{number}</span> <span class="var">{topic}</span> That <span class="var">{benefit}</span>"
+
+Example: "17 Email Subject Lines That Got 40%+ Open Rates"
+
+Niche: <span class="var">{niche}</span>
+Audience: <span class="var">{audience}</span>
+
+Structure each item with:
+1. Numbered heading with a mini-hook
+2. Why it works (the psychology or strategy behind it)
+3. Real-world example or case study reference
+4. How to implement it (actionable steps)
+5. Pro tip or common mistake to avoid
+
+Listicle rules:
+- Don't start with the most obvious items
+- Include at least 3 contrarian or surprising entries
+- Add a "Bonus" item at the end
+- Each item should be standalone valuable
+- Use transition sentences between items for flow
+- End with a summary ranking (top 3 picks for beginners)
+
+Format: Blog post with table of contents, ~<span class="var">{word_count}</span> words<button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> Odd numbers in listicle titles outperform even numbers. "17 ways" beats "16 ways" in CTR.</div>
+</div></div>
+</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#4</span><span class="prompt-title">How-To Guide with Step-by-Step Screenshots</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">Create a detailed how-to guide: "How to <span class="var">{task}</span> in <span class="var">{timeframe}</span>"
+
+Topic: <span class="var">{detailed_topic}</span>
+Audience skill level: <span class="var">{beginner/intermediate/advanced}</span>
+Tools needed: <span class="var">{tools_or_software}</span>
+
+Structure:
+1. Introduction: What they'll achieve + prerequisites
+2. Quick overview: Numbered steps at a glance
+3. Detailed walkthrough: Each step with:
+   - Action to take
+   - [Screenshot placeholder: describe what to capture]
+   - Expected result
+   - Troubleshooting if something goes wrong
+4. Pro tips section (3-5 expert shortcuts)
+5. Common mistakes section (what NOT to do)
+6. Next steps: What to learn after mastering this
+7. FAQ (5 common questions)
+
+Writing style:
+- Second person ("you")
+- Present tense for instructions
+- Bold key UI elements and button names
+- Include time estimate per step<button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> How-to guides with screenshot placeholders make it easy to add visuals later. These guides rank extremely well for featured snippets.</div>
+</div></div>
+</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#5</span><span class="prompt-title">Comparison Post (X vs Y) with Decision Framework</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">Write an unbiased comparison: "<span class="var">{Product A}</span> vs <span class="var">{Product B}</span>: Which is Better for <span class="var">{use_case}</span>?"
+
+Products being compared:
+- <span class="var">{Product A}</span>: <span class="var">{brief description}</span>
+- <span class="var">{Product B}</span>: <span class="var">{brief description}</span>
+
+Audience: <span class="var">{who is deciding}</span>
+Key decision factors: <span class="var">{factors, e.g., "price, ease of use, features, support"}</span>
+
+Structure:
+1. TL;DR verdict (one paragraph, immediately useful)
+2. Quick comparison table (features side by side)
+3. Deep dive on each factor:
+   - Winner for this category
+   - Evidence/reasoning
+   - Who cares most about this factor
+4. Pricing breakdown (plans, hidden costs, value analysis)
+5. Use case recommendations:
+   - "Choose A if..." (3 scenarios)
+   - "Choose B if..." (3 scenarios)
+6. Our pick and why
+7. FAQ
+
+Be genuinely balanced. Readers detect bias instantly and bounce.<button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> Comparison keywords ("X vs Y") have extremely high buyer intent. These posts convert well because readers are ready to make a decision.</div>
+</div></div>
+</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#6</span><span class="prompt-title">Thought Leadership Essay with Original Perspective</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">Write a thought leadership essay arguing: "<span class="var">{thesis_statement}</span>"
+
+My perspective: <span class="var">{your_unique_angle}</span>
+My experience: <span class="var">{relevant_credentials_or_experience}</span>
+Industry: <span class="var">{industry}</span>
+
+Structure:
+1. Opening hook: Contrarian statement or surprising observation
+2. The conventional wisdom (what most people believe)
+3. Why that's wrong or incomplete (your evidence)
+4. Your alternative framework (the new mental model)
+5. Case studies or examples proving your point (3 minimum)
+6. Anticipated objections and your responses
+7. Implications: What this means for the reader
+8. Call to action: How to apply this thinking
+
+Tone: Confident but not arrogant. Data-backed but storytelling-driven.
+Target: <span class="var">{word_count}</span> words, <span class="var">{platform, e.g., "LinkedIn", "Substack", "Medium"}</span><button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> The best thought leadership starts with a specific experience, not a general observation. Start with "Last week, I..." not "The industry is..."</div>
+</div></div>
+</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#7</span><span class="prompt-title">Case Study Writer with Storytelling Framework</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">Write a compelling case study using the Problem-Solution-Results framework.
+
+Client: <span class="var">{client_name_or_anonymized}</span>
+Industry: <span class="var">{client_industry}</span>
+Challenge: <span class="var">{the_problem_they_faced}</span>
+Solution: <span class="var">{what_you_did}</span>
+Results: <span class="var">{measurable_outcomes}</span>
+Timeline: <span class="var">{project_duration}</span>
+
+Structure:
+1. Headline: Result-focused (e.g., "How X Increased Revenue 340%")
+2. Executive summary (3 sentences)
+3. The situation: Context and stakes
+4. The challenge: Specific pain points with emotional weight
+5. The approach: Step-by-step what was done and why
+6. The results: Hard numbers in bold, with context
+7. Key takeaways: 3 lessons anyone can apply
+8. Client quote placeholder
+9. CTA: How to get similar results
+
+Make it read like a story, not a report. Create tension and resolution.<button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> Lead with the most impressive result in the headline. "340% revenue increase" hooks readers; "We helped a client" does not.</div>
+</div></div>
+</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#8</span><span class="prompt-title">Pillar Page & Content Cluster Architect</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">Design a complete pillar page and content cluster for the topic: "<span class="var">{broad_topic}</span>"
+
+Context:
+- Website: <span class="var">{site_description}</span>
+- Target audience: <span class="var">{audience}</span>
+- Primary keyword: <span class="var">{keyword}</span>
+- Competitors ranking for this: <span class="var">{competitor_urls_or_names}</span>
+
+Create:
+1. PILLAR PAGE outline (~3000 words):
+   - Title and meta description
+   - H2 sections (8-12, each covering a subtopic)
+   - Summary paragraph for each section
+   - Internal link anchor text suggestions
+
+2. CLUSTER ARTICLES (8-10 supporting posts):
+   - Title with target keyword
+   - Target word count
+   - Search intent (informational, navigational, transactional)
+   - Link back to pillar page: suggested anchor text
+   - Brief outline (5-6 H2 headings)
+
+3. CONTENT MAP showing how everything links together
+
+4. PUBLISHING SCHEDULE: Order of publication for maximum SEO impact<button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> Publish cluster articles first, then the pillar page. When the pillar page goes live with all internal links already in place, it signals topical authority immediately.</div>
+</div></div>
+</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#9</span><span class="prompt-title">Newsletter Issue Writer with Engagement Hooks</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">Write a newsletter issue for my <span class="var">{niche}</span> newsletter: "<span class="var">{newsletter_name}</span>"
+
+Subscriber count: <span class="var">{count}</span>
+Subscriber profile: <span class="var">{who_subscribes}</span>
+This week's topic: <span class="var">{topic}</span>
+Key insight to share: <span class="var">{insight}</span>
+
+Structure:
+1. Subject line (5 variations for A/B testing)
+2. Preview text (the text shown in inbox after subject)
+3. Opening hook (personal story or surprising stat)
+4. Main insight (the core value of this issue)
+5. Practical application (how to use this insight today)
+6. Resource roundup (3 curated links with commentary)
+7. CTA (reply prompt, share prompt, or product mention)
+8. Sign-off (personal, warm, on-brand)
+
+Rules:
+- Under <span class="var">{word_count, e.g., 500}</span> words
+- Scannable with bold, bullets, and short paragraphs
+- One clear takeaway per issue
+- Conversational tone (like writing to a smart friend)
+- Include one question to encourage replies<button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> Newsletter subject lines that start with a number or question get 20%+ higher open rates. Test "[First name], ..." personalization too.</div>
+</div></div>
+</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#10</span><span class="prompt-title">Content Brief Generator for Writers</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">Create a detailed content brief that a freelance writer can follow to produce a publication-ready article.
+
+Topic: <span class="var">{topic}</span>
+Target keyword: <span class="var">{keyword}</span>
+Brand: <span class="var">{brand_name}</span>
+Brand voice: <span class="var">{voice_description}</span>
+
+Generate a brief with:
+1. Working title (3 options)
+2. Target word count and format
+3. Search intent analysis
+4. Target audience description
+5. Key message / thesis
+6. Required H2 headings (in order)
+7. Required points to cover under each heading
+8. Competitors to outperform (and what they miss)
+9. Required internal links
+10. Required external sources / data to reference
+11. CTA at end of article
+12. SEO checklist (keyword placement, meta, alt tags)
+13. Do's and Don'ts for this piece
+14. Example sentences showing the desired tone
+
+This brief should be so clear that a writer unfamiliar with the brand can produce an on-brand first draft.<button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> Great content briefs eliminate revision cycles. Invest time here to save time on editing later.</div>
+</div></div>
+</div>
+
+<!-- LOCKED SECTIONS -->
+<div class="category-label">Section 2: Video Scripts & YouTube (Prompts 11-20)</div>
+<div class="locked-overlay">
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#11</span><span class="prompt-title">YouTube Video Script with Retention Optimization</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#12</span><span class="prompt-title">YouTube Shorts / Reels / TikTok Script Writer</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#13</span><span class="prompt-title">Video Title & Thumbnail Concept Generator</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#14</span><span class="prompt-title">Podcast Episode Outline & Show Notes</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#15</span><span class="prompt-title">Webinar Script with Engagement Triggers</span><span class="prompt-toggle">&#128274;</span></div></div>
+</div>
+
+<div class="category-label">Section 3: Social Media Strategy (Prompts 21-30)</div>
+<div class="locked-overlay">
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#21</span><span class="prompt-title">30-Day Social Media Content Calendar</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#22</span><span class="prompt-title">Twitter/X Thread Writer (Viral Framework)</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#23</span><span class="prompt-title">LinkedIn Post Optimizer (Algorithm-Friendly)</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#24</span><span class="prompt-title">Instagram Carousel Script Generator</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#25</span><span class="prompt-title">Community Engagement Response Templates</span><span class="prompt-toggle">&#128274;</span></div></div>
+</div>
+
+<div class="category-label">Section 4: SEO & Content Optimization (Prompts 31-40)</div>
+<div class="locked-overlay">
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#31</span><span class="prompt-title">Keyword Research & Content Gap Finder</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#32</span><span class="prompt-title">Existing Content SEO Refresher</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#33</span><span class="prompt-title">Featured Snippet Optimizer</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#34</span><span class="prompt-title">Content Readability & Engagement Scorer</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#35</span><span class="prompt-title">Schema Markup Generator for Content</span><span class="prompt-toggle">&#128274;</span></div></div>
+</div>
+
+<div class="category-label">Section 5: Email & Newsletter Growth (Prompts 41-50)</div>
+<div class="locked-overlay">
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#41</span><span class="prompt-title">Lead Magnet Content Creator</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#42</span><span class="prompt-title">Welcome Email Sequence Writer (5 emails)</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#43</span><span class="prompt-title">Re-engagement Campaign for Inactive Subscribers</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#44</span><span class="prompt-title">Content Upgrade Generator (Post-Specific Lead Magnets)</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#45</span><span class="prompt-title">Newsletter Growth Strategy Planner</span><span class="prompt-toggle">&#128274;</span></div></div>
+</div>
+
+<div class="unlock-card">
+<h3>Unlock All 50 Content Creator Prompts</h3>
+<p>Get the complete pack with video scripts, social media strategies, SEO optimization tools, and email growth prompts.</p>
+<div class="unlock-price">$9</div>
+<button class="unlock-btn" onclick="openCheckout()">Get Full Pack — $9</button>
+</div>
+</section>
+
+<footer><p>PromptVault &mdash; A <a href="https://nextool.app">NexTool</a> product. <a href="../">Back to all packs</a></p></footer>
+
+<div class="checkout-overlay" id="checkoutOverlay">
+<div class="checkout-modal">
+<button class="checkout-close" onclick="closeCheckout()">&times;</button>
+<div id="checkoutForm">
+<div class="checkout-title">Get Content Creator Pack</div>
+<div class="checkout-item">50 Expert Content Prompts — $9</div>
+<div class="checkout-field"><label>Your Name</label><input type="text" id="coName" placeholder="John Doe"></div>
+<div class="checkout-field"><label>Email (for delivery)</label><input type="email" id="coEmail" placeholder="john@example.com"></div>
+<button class="checkout-pay" id="checkoutPay">Pay with PayPal — $9</button>
+<p style="font-size:.75rem;color:var(--text2);text-align:center;margin-top:.8rem">Prompts delivered to your email within 1 hour.</p>
+</div>
+<div class="checkout-success" id="checkoutSuccess"><h3>Payment Initiated!</h3><p>Your prompts will be sent to your email within 1 hour after PayPal payment.</p></div>
+</div>
+</div>
+
+<script>
+var PAYPAL_USERNAME='YOUR_PAYPAL_USERNAME';
+function togglePrompt(card){if(card.querySelector('.prompt-toggle').textContent==='🔒')return;var wasOpen=card.classList.contains('open');document.querySelectorAll('.prompt-card.open').forEach(function(c){c.classList.remove('open');c.querySelector('.prompt-body').style.maxHeight=null});if(!wasOpen){card.classList.add('open');var body=card.querySelector('.prompt-body');body.style.maxHeight=body.scrollHeight+'px'}}
+function copyPrompt(btn){var text=btn.parentElement.innerText.replace('Copy','').trim();navigator.clipboard.writeText(text).then(function(){btn.textContent='Copied!';setTimeout(function(){btn.textContent='Copy'},2000)})}
+function openCheckout(){document.getElementById('checkoutOverlay').classList.add('active');document.getElementById('checkoutForm').style.display='block';document.getElementById('checkoutSuccess').style.display='none'}
+function closeCheckout(){document.getElementById('checkoutOverlay').classList.remove('active')}
+document.getElementById('checkoutOverlay').addEventListener('click',function(e){if(e.target===this)closeCheckout()});
+document.getElementById('checkoutPay').addEventListener('click',function(){var n=document.getElementById('coName').value.trim(),e=document.getElementById('coEmail').value.trim();if(!n||!e){alert('Please fill in name and email.');return}var orders=JSON.parse(localStorage.getItem('pv_orders')||'[]');orders.push({id:'PV-CC-'+Date.now().toString(36).toUpperCase(),item:'Content Creator',price:'9',name:n,email:e,date:new Date().toISOString()});localStorage.setItem('pv_orders',JSON.stringify(orders));window.open('https://paypal.me/'+PAYPAL_USERNAME+'/9USD','_blank');document.getElementById('checkoutForm').style.display='none';document.getElementById('checkoutSuccess').style.display='block'});
+</script>
+</body>
+</html>

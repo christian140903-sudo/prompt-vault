@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Developer Kit — 50 Expert AI Prompts for Software Developers | PromptVault</title>
+<meta name="description" content="50 expert-level AI prompts for developers. Code review, architecture design, debugging, testing, API design, DevOps & more. Works with ChatGPT, Claude, Gemini. $9.">
+<meta name="keywords" content="developer prompts, AI coding prompts, code review prompts, debugging prompts, architecture prompts, ChatGPT for developers">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://christian140903-sudo.github.io/prompt-vault/prompts/developer-kit.html">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#07070a;--surface:#0e0e14;--surface2:#151520;--border:rgba(255,255,255,.06);--text:#e5e5e5;--text2:#888;--accent:#6366f1;--accent2:#818cf8;--gold:#fbbf24;--emerald:#10b981;--blue:#3b82f6}
+body{font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+.bg-noise{position:fixed;inset:0;opacity:.03;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");pointer-events:none}
+header{position:sticky;top:0;z-index:100;padding:1rem 2rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border);backdrop-filter:blur(16px);background:rgba(7,7,10,.8)}
+.logo{font-size:1.2rem;font-weight:800;text-decoration:none;color:var(--text);display:flex;align-items:center;gap:.5rem}
+.logo-mark{width:28px;height:28px;background:linear-gradient(135deg,var(--accent),var(--gold));border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:900;color:#fff}
+.back-link{color:var(--accent2);font-size:.85rem;text-decoration:none;font-weight:500}
+.back-link:hover{text-decoration:underline}
+.hero{text-align:center;padding:4rem 2rem 3rem;max-width:700px;margin:0 auto}
+.hero-icon{width:64px;height:64px;background:linear-gradient(135deg,rgba(99,102,241,.2),rgba(129,140,248,.2));border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:1.8rem;margin:0 auto 1.5rem}
+.hero h1{font-size:2.5rem;font-weight:900;letter-spacing:-1.5px;margin-bottom:1rem}
+.hero h1 span{background:linear-gradient(135deg,var(--accent2),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero p{color:var(--text2);font-size:1rem;line-height:1.7;margin-bottom:1.5rem}
+.hero-meta{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}
+.hero-meta-item{font-size:.85rem;color:var(--text2)}
+.hero-meta-item strong{color:var(--accent2)}
+.buy-bar{position:sticky;top:60px;z-index:90;padding:1rem 2rem;background:rgba(7,7,10,.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.buy-bar-info{font-size:.9rem;font-weight:600}
+.buy-bar-price{color:var(--accent2);font-size:1.1rem;font-weight:800}
+.buy-btn{background:var(--accent);color:#fff;padding:.6rem 1.5rem;border-radius:8px;font-size:.85rem;font-weight:700;border:none;cursor:pointer;transition:all .2s}
+.buy-btn:hover{background:var(--accent2);transform:translateY(-1px)}
+.prompts{max-width:800px;margin:0 auto;padding:2rem}
+.category-label{font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--accent2);font-weight:700;margin:2.5rem 0 1rem;padding-bottom:.5rem;border-bottom:1px solid var(--border)}
+.prompt-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;margin-bottom:1rem;overflow:hidden;transition:border-color .2s}
+.prompt-card:hover{border-color:rgba(99,102,241,.2)}
+.prompt-header{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.25rem;cursor:pointer}
+.prompt-num{font-size:.7rem;font-weight:700;color:var(--accent);background:rgba(99,102,241,.1);padding:.2rem .5rem;border-radius:4px;margin-right:.75rem}
+.prompt-title{flex:1;font-size:.95rem;font-weight:600}
+.prompt-toggle{color:var(--text2);font-size:1.2rem;transition:transform .3s}
+.prompt-card.open .prompt-toggle{transform:rotate(45deg);color:var(--accent2)}
+.prompt-body{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.prompt-body-inner{padding:0 1.25rem 1.25rem}
+.prompt-text{font-family:'SF Mono',Monaco,monospace;font-size:.82rem;color:var(--text);line-height:1.8;white-space:pre-wrap;background:var(--surface2);padding:1rem;border-radius:8px;border:1px solid var(--border);position:relative}
+.prompt-text .var{color:var(--gold);font-weight:600}
+.prompt-tip{margin-top:.75rem;padding:.75rem 1rem;background:rgba(99,102,241,.05);border:1px solid rgba(99,102,241,.1);border-radius:8px;font-size:.8rem;color:var(--text2);line-height:1.6}
+.prompt-tip strong{color:var(--accent2)}
+.copy-btn{position:absolute;top:.5rem;right:.5rem;background:var(--accent);color:#fff;border:none;padding:.35rem .75rem;border-radius:6px;font-size:.7rem;font-weight:600;cursor:pointer;opacity:.7;transition:opacity .2s}
+.copy-btn:hover{opacity:1}
+.locked-overlay{position:relative}
+.locked-overlay::after{content:'';position:absolute;bottom:0;left:0;right:0;height:80%;background:linear-gradient(to bottom,transparent,var(--bg));pointer-events:none}
+.unlock-card{text-align:center;padding:3rem 2rem;background:linear-gradient(135deg,rgba(99,102,241,.06),rgba(251,191,36,.06));border:1px solid rgba(99,102,241,.15);border-radius:16px;margin:2rem auto;max-width:500px}
+.unlock-card h3{font-size:1.3rem;font-weight:800;margin-bottom:.5rem}
+.unlock-card p{color:var(--text2);margin-bottom:1.5rem;font-size:.9rem}
+.unlock-price{font-size:2rem;font-weight:900;color:var(--accent2);margin-bottom:1rem}
+.unlock-btn{display:inline-block;background:linear-gradient(135deg,var(--accent),var(--gold));color:#fff;padding:.85rem 2.5rem;border-radius:10px;font-size:1rem;font-weight:700;border:none;cursor:pointer;transition:all .2s}
+.unlock-btn:hover{transform:scale(1.03);box-shadow:0 8px 25px rgba(99,102,241,.3)}
+.checkout-overlay{display:none;position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,.7);backdrop-filter:blur(8px);align-items:center;justify-content:center}
+.checkout-overlay.active{display:flex}
+.checkout-modal{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:2.5rem;max-width:440px;width:90%;position:relative}
+.checkout-close{position:absolute;top:1rem;right:1rem;background:none;border:none;color:var(--text2);font-size:1.5rem;cursor:pointer}
+.checkout-title{font-size:1.3rem;font-weight:800;margin-bottom:.5rem}
+.checkout-item{font-size:.9rem;color:var(--accent2);margin-bottom:1.5rem}
+.checkout-field{margin-bottom:1rem}
+.checkout-field label{display:block;font-size:.8rem;color:var(--text2);margin-bottom:.4rem}
+.checkout-field input{width:100%;padding:.8rem 1rem;background:var(--surface2);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:.9rem;outline:none}
+.checkout-field input:focus{border-color:var(--accent)}
+.checkout-pay{width:100%;padding:.9rem;background:var(--accent);color:#fff;border:none;border-radius:10px;font-size:1rem;font-weight:700;cursor:pointer;margin-top:.5rem}
+.checkout-pay:hover{background:var(--accent2)}
+.checkout-success{display:none;text-align:center;padding:2rem 0}
+.checkout-success h3{color:var(--emerald);margin-bottom:.5rem}
+.checkout-success p{color:var(--text2);font-size:.9rem}
+footer{border-top:1px solid var(--border);padding:2rem;text-align:center;color:var(--text2);font-size:.85rem}
+footer a{color:var(--accent2);text-decoration:none}
+@media(max-width:768px){.hero h1{font-size:1.8rem}.buy-bar{flex-wrap:wrap;justify-content:center}.prompt-text{font-size:.75rem}}
+</style>
+</head>
+<body>
+<div class="bg-noise"></div>
+<header>
+<a href="../" class="logo"><div class="logo-mark">PV</div> PromptVault</a>
+<a href="../" class="back-link">&larr; All Packs</a>
+</header>
+
+<section class="hero">
+<div class="hero-icon">&#128187;</div>
+<h1>Developer Kit<br><span>50 Expert Prompts</span></h1>
+<p>Battle-tested AI prompts for software developers. From code review and debugging to architecture design, API development, testing strategies, and DevOps automation. Each prompt includes context variables and optimization tips.</p>
+<div class="hero-meta">
+<div class="hero-meta-item"><strong>50</strong> Prompts</div>
+<div class="hero-meta-item"><strong>5</strong> Categories</div>
+<div class="hero-meta-item"><strong>PDF + TXT</strong> Format</div>
+<div class="hero-meta-item">Works with <strong>Any LLM</strong></div>
+</div>
+</section>
+
+<div class="buy-bar">
+<div>
+<span class="buy-bar-info">Developer Kit — 50 Prompts</span>
+<span class="buy-bar-price">$9</span>
+</div>
+<button class="buy-btn" onclick="openCheckout()">Buy Full Pack — $9</button>
+</div>
+
+<section class="prompts">
+<!-- SECTION 1: CODE REVIEW (Free Preview) -->
+<div class="category-label">Section 1: Code Review &amp; Quality (Prompts 1-10) — Free Preview</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#1</span><span class="prompt-title">Comprehensive Code Review with Security & Performance Audit</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">You are a senior software engineer with 15+ years of experience in <span class="var">{language}</span> and security best practices.
+
+Review this code for:
+1. Security vulnerabilities (OWASP Top 10)
+2. Performance bottlenecks and memory leaks
+3. Code smell and maintainability issues
+4. Edge cases and error handling gaps
+5. Adherence to <span class="var">{coding_standard, e.g., PEP 8, Airbnb JS}</span>
+
+Code:
+```
+<span class="var">{paste code here}</span>
+```
+
+Context:
+- This code is part of a <span class="var">{project_type, e.g., REST API, web app}</span>
+- It handles <span class="var">{functionality_description}</span>
+- Expected traffic: <span class="var">{requests_per_second}</span>
+- Database: <span class="var">{database_type}</span>
+
+For each issue found, provide:
+- Severity: Critical / High / Medium / Low
+- Location: Line number or function name
+- Problem: What's wrong and why it matters
+- Fix: Corrected code snippet
+- Impact: What could happen if left unfixed
+
+End with an overall code quality score (1-10) and top 3 priority fixes.<button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> Include the full file, not just a snippet. The more context the AI has about imports, dependencies, and usage patterns, the deeper the review will be.</div>
+</div></div>
+</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#2</span><span class="prompt-title">Pull Request Review with Constructive Feedback</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">You are a tech lead reviewing a pull request. Your feedback style is constructive, specific, and educational.
+
+PR Title: <span class="var">{pr_title}</span>
+PR Description: <span class="var">{pr_description}</span>
+Files changed: <span class="var">{number_of_files}</span>
+
+Diff:
+```diff
+<span class="var">{paste diff here}</span>
+```
+
+Review the PR for:
+1. Does it accomplish what the PR description claims?
+2. Are there any bugs or logic errors?
+3. Is the code readable and well-structured?
+4. Are tests adequate for the changes?
+5. Any potential regression risks?
+6. Performance implications?
+
+Format your review as GitHub PR comments:
+- Use "MUST FIX" for blocking issues
+- Use "SUGGESTION" for improvements
+- Use "QUESTION" for clarification needs
+- Use "PRAISE" for good patterns you notice
+
+End with: Approve / Request Changes / Needs Discussion<button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> Paste the actual git diff output for the most accurate review. Include the test files in the diff too.</div>
+</div></div>
+</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#3</span><span class="prompt-title">Refactor Legacy Code to Modern Patterns</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">You are a refactoring specialist. Modernize this legacy <span class="var">{language}</span> code while preserving all existing behavior.
+
+Legacy code:
+```
+<span class="var">{paste legacy code}</span>
+```
+
+Current issues:
+- <span class="var">{issue_1, e.g., "No separation of concerns"}</span>
+- <span class="var">{issue_2, e.g., "Deeply nested callbacks"}</span>
+- <span class="var">{issue_3, e.g., "No error handling"}</span>
+
+Target patterns: <span class="var">{patterns, e.g., "async/await, dependency injection, SOLID"}</span>
+Target version: <span class="var">{language_version, e.g., "Python 3.12", "Node 20"}</span>
+
+Requirements:
+1. Refactor incrementally — show each step as a separate code block
+2. Explain WHY each change improves the code
+3. Maintain backward compatibility
+4. Add type hints/annotations where applicable
+5. Suggest tests that should be written to verify the refactoring
+
+Output: Step-by-step refactoring with explanations, final clean code, and a migration checklist.<button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> Specify the constraints — if you can't change the API surface, say so. If there are dependencies that must stay, list them.</div>
+</div></div>
+</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#4</span><span class="prompt-title">Code Complexity Reducer</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">Analyze this <span class="var">{language}</span> code for complexity and simplify it without changing behavior.
+
+```
+<span class="var">{paste code}</span>
+```
+
+Specifically:
+1. Calculate cyclomatic complexity for each function
+2. Identify functions exceeding complexity of 10
+3. Break complex functions into smaller, single-responsibility functions
+4. Replace nested conditionals with early returns or guard clauses
+5. Extract magic numbers into named constants
+6. Simplify boolean expressions
+
+For each simplification:
+- Show before and after
+- Explain the complexity reduction
+- Confirm behavior preservation
+
+Target: Every function should have cyclomatic complexity under 10.<button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> This works especially well on controller/handler functions that have accumulated complexity over time.</div>
+</div></div>
+</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#5</span><span class="prompt-title">Documentation Generator from Code</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">Generate comprehensive documentation for this <span class="var">{language}</span> code.
+
+```
+<span class="var">{paste code}</span>
+```
+
+Generate:
+1. Module/file-level docstring explaining purpose and usage
+2. Function/method docstrings with:
+   - Description of what it does
+   - Parameters with types and descriptions
+   - Return value description
+   - Exceptions that can be raised
+   - Usage example
+3. Inline comments for non-obvious logic
+4. A README section covering:
+   - Installation/setup
+   - Quick start example
+   - API reference table
+   - Common patterns and gotchas
+
+Documentation style: <span class="var">{style, e.g., "Google style", "NumPy style", "JSDoc"}</span>
+
+Important: Do not change the code itself. Only add documentation.<button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> Feed entire modules rather than individual functions. The AI writes better docs when it understands how pieces fit together.</div>
+</div></div>
+</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#6</span><span class="prompt-title">Design Pattern Advisor</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">Analyze this <span class="var">{language}</span> codebase structure and recommend appropriate design patterns.
+
+Current code structure:
+```
+<span class="var">{paste code or describe architecture}</span>
+```
+
+The code currently handles: <span class="var">{functionality}</span>
+Pain points: <span class="var">{problems, e.g., "hard to test", "too many conditionals"}</span>
+Future requirements: <span class="var">{upcoming_features}</span>
+
+For each recommended pattern:
+1. Name the pattern and explain why it fits
+2. Show a concrete implementation using my actual code
+3. Before/after comparison
+4. Trade-offs (what you gain vs. added complexity)
+5. When this pattern would be overkill
+
+Limit to 3 most impactful patterns. Don't suggest patterns for the sake of patterns.<button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> Be specific about your pain points. "It's messy" is less useful than "Every time we add a payment method, we have to modify 5 files."</div>
+</div></div>
+</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#7</span><span class="prompt-title">Error Handling Strategy Builder</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">Design a comprehensive error handling strategy for this <span class="var">{language}</span> <span class="var">{project_type}</span>.
+
+Current code with minimal error handling:
+```
+<span class="var">{paste code}</span>
+```
+
+Requirements:
+1. Create a custom error hierarchy for this domain
+2. Add try/catch blocks with specific error types
+3. Implement retry logic for transient failures
+4. Add structured logging for each error path
+5. Create user-friendly error messages (separate from internal logs)
+6. Implement graceful degradation where possible
+7. Add circuit breaker pattern for external service calls
+
+Context:
+- External services used: <span class="var">{services, e.g., "PostgreSQL, Redis, Stripe API"}</span>
+- Error reporting tool: <span class="var">{tool, e.g., "Sentry, Datadog"}</span>
+- User-facing? <span class="var">{yes/no}</span>
+
+Output: Refactored code with complete error handling + error hierarchy diagram.<button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> Mention which errors your users currently see. The AI can design better error messages when it knows the user experience gap.</div>
+</div></div>
+</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#8</span><span class="prompt-title">Type Safety Migration Guide</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">Migrate this <span class="var">{source, e.g., "JavaScript"}</span> code to <span class="var">{target, e.g., "TypeScript"}</span> with strict type safety.
+
+Current code:
+```
+<span class="var">{paste code}</span>
+```
+
+Requirements:
+1. Add strict types to all function signatures
+2. Define interfaces for all data structures
+3. Replace `any` types with proper generics
+4. Add type guards for runtime type checking
+5. Handle nullable values explicitly
+6. Create utility types where patterns repeat
+
+Configuration: Use <span class="var">{strict_mode, e.g., "strict: true in tsconfig"}</span>
+External types needed: <span class="var">{libraries, e.g., "@types/express, @types/node"}</span>
+
+Output:
+- Fully typed code
+- Interface/type definitions file
+- Migration notes for team members
+- Common gotchas to watch for<button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> Include your API response shapes if available. Type safety is most valuable at the boundary between your code and external data.</div>
+</div></div>
+</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#9</span><span class="prompt-title">Dependency Audit & Cleanup</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">Audit the dependencies in this <span class="var">{language}</span> project and recommend cleanup.
+
+Package file:
+```
+<span class="var">{paste package.json / requirements.txt / Cargo.toml / etc.}</span>
+```
+
+Source code imports:
+```
+<span class="var">{paste import statements from main files}</span>
+```
+
+Analyze:
+1. Unused dependencies (listed but never imported)
+2. Duplicate functionality (two libs doing the same thing)
+3. Security vulnerabilities (known CVEs)
+4. Outdated packages with breaking changes
+5. Heavy dependencies that could be replaced with lighter alternatives
+6. Dependencies that could be replaced with built-in language features
+
+For each recommendation:
+- Action: Remove / Replace / Update / Keep
+- Reason: Why this change matters
+- Impact: Bundle size / security / performance improvement
+- Migration: Steps to make the change safely
+
+Output: Prioritized action list with estimated impact.<button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> Paste the lock file too (package-lock.json) for deeper dependency tree analysis.</div>
+</div></div>
+</div>
+
+<div class="prompt-card" onclick="togglePrompt(this)">
+<div class="prompt-header"><span class="prompt-num">#10</span><span class="prompt-title">Code Performance Profiler</span><span class="prompt-toggle">+</span></div>
+<div class="prompt-body"><div class="prompt-body-inner">
+<div class="prompt-text">Profile this <span class="var">{language}</span> code for performance and suggest optimizations.
+
+```
+<span class="var">{paste code}</span>
+```
+
+Context:
+- This runs <span class="var">{frequency, e.g., "1000 times/second"}</span>
+- Data size: <span class="var">{data_size, e.g., "10k records per call"}</span>
+- Current response time: <span class="var">{current_time, e.g., "450ms"}</span>
+- Target response time: <span class="var">{target_time, e.g., "under 100ms"}</span>
+
+Analyze:
+1. Time complexity of each function (Big O)
+2. Space complexity and memory allocation patterns
+3. Database query efficiency (N+1 problems, missing indexes)
+4. Unnecessary computations or redundant operations
+5. Opportunities for caching, memoization, or lazy evaluation
+6. Parallelization opportunities
+
+For each optimization:
+- Expected improvement: X% faster / Xms reduction
+- Implementation complexity: Easy / Medium / Hard
+- Trade-off: What you sacrifice (readability, memory, etc.)
+
+Prioritize by impact-to-effort ratio.<button class="copy-btn" onclick="event.stopPropagation();copyPrompt(this)">Copy</button></div>
+<div class="prompt-tip"><strong>Tip:</strong> If you have profiling data (flame graphs, slow query logs), include it. Real measurements beat theoretical analysis.</div>
+</div></div>
+</div>
+
+<!-- LOCKED SECTION -->
+<div class="category-label">Section 2: Debugging & Troubleshooting (Prompts 11-20)</div>
+<div class="locked-overlay">
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#11</span><span class="prompt-title">Systematic Bug Diagnosis from Error Logs</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#12</span><span class="prompt-title">Race Condition Detector & Fix Generator</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#13</span><span class="prompt-title">Memory Leak Investigation Workflow</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#14</span><span class="prompt-title">Production Incident Root Cause Analysis</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#15</span><span class="prompt-title">Stack Trace Interpreter & Fix Suggester</span><span class="prompt-toggle">&#128274;</span></div></div>
+</div>
+
+<div class="category-label">Section 3: Architecture & System Design (Prompts 21-30)</div>
+<div class="locked-overlay">
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#21</span><span class="prompt-title">System Architecture Decision Document Generator</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#22</span><span class="prompt-title">Microservices vs Monolith Decision Framework</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#23</span><span class="prompt-title">Database Schema Designer with Migration Plan</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#24</span><span class="prompt-title">API Contract Designer (REST/GraphQL/gRPC)</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#25</span><span class="prompt-title">Scalability Assessment & Bottleneck Predictor</span><span class="prompt-toggle">&#128274;</span></div></div>
+</div>
+
+<div class="category-label">Section 4: Testing & QA (Prompts 31-40)</div>
+<div class="locked-overlay">
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#31</span><span class="prompt-title">Test Suite Generator (Unit + Integration + E2E)</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#32</span><span class="prompt-title">Edge Case Discovery & Test Case Writer</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#33</span><span class="prompt-title">Mock & Stub Generator for External Services</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#34</span><span class="prompt-title">Test Coverage Gap Analyzer</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#35</span><span class="prompt-title">Load Testing Scenario Planner</span><span class="prompt-toggle">&#128274;</span></div></div>
+</div>
+
+<div class="category-label">Section 5: DevOps & Deployment (Prompts 41-50)</div>
+<div class="locked-overlay">
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#41</span><span class="prompt-title">CI/CD Pipeline Architect</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#42</span><span class="prompt-title">Docker & Container Optimization Expert</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#43</span><span class="prompt-title">Infrastructure as Code Generator</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#44</span><span class="prompt-title">Monitoring & Alerting Strategy Designer</span><span class="prompt-toggle">&#128274;</span></div></div>
+<div class="prompt-card"><div class="prompt-header"><span class="prompt-num">#45</span><span class="prompt-title">Zero-Downtime Deployment Planner</span><span class="prompt-toggle">&#128274;</span></div></div>
+</div>
+
+<div class="unlock-card">
+<h3>Unlock All 50 Developer Prompts</h3>
+<p>Get the complete pack with all 50 expert-level prompts, including debugging workflows, architecture templates, test generators, and DevOps automation.</p>
+<div class="unlock-price">$9</div>
+<button class="unlock-btn" onclick="openCheckout()">Get Full Pack — $9</button>
+</div>
+</section>
+
+<footer>
+<p>PromptVault &mdash; A <a href="https://nextool.app">NexTool</a> product. <a href="../">Back to all packs</a></p>
+</footer>
+
+<div class="checkout-overlay" id="checkoutOverlay">
+<div class="checkout-modal">
+<button class="checkout-close" onclick="closeCheckout()">&times;</button>
+<div id="checkoutForm">
+<div class="checkout-title">Get Developer Kit</div>
+<div class="checkout-item">50 Expert Developer Prompts — $9</div>
+<div class="checkout-field"><label>Your Name</label><input type="text" id="coName" placeholder="John Doe"></div>
+<div class="checkout-field"><label>Email (for delivery)</label><input type="email" id="coEmail" placeholder="john@example.com"></div>
+<button class="checkout-pay" id="checkoutPay">Pay with PayPal — $9</button>
+<p style="font-size:.75rem;color:var(--text2);text-align:center;margin-top:.8rem">Prompts delivered to your email within 1 hour after payment.</p>
+</div>
+<div class="checkout-success" id="checkoutSuccess">
+<h3>Payment Initiated!</h3>
+<p>After PayPal payment, your prompts will be sent to your email within 1 hour.</p>
+</div>
+</div>
+</div>
+
+<script>
+var PAYPAL_USERNAME='YOUR_PAYPAL_USERNAME';
+function togglePrompt(card){if(card.querySelector('.prompt-toggle').textContent==='🔒')return;var wasOpen=card.classList.contains('open');document.querySelectorAll('.prompt-card.open').forEach(function(c){c.classList.remove('open');c.querySelector('.prompt-body').style.maxHeight=null});if(!wasOpen){card.classList.add('open');var body=card.querySelector('.prompt-body');body.style.maxHeight=body.scrollHeight+'px'}}
+function copyPrompt(btn){var text=btn.parentElement.innerText.replace('Copy','').trim();navigator.clipboard.writeText(text).then(function(){btn.textContent='Copied!';setTimeout(function(){btn.textContent='Copy'},2000)})}
+function openCheckout(){document.getElementById('checkoutOverlay').classList.add('active');document.getElementById('checkoutForm').style.display='block';document.getElementById('checkoutSuccess').style.display='none'}
+function closeCheckout(){document.getElementById('checkoutOverlay').classList.remove('active')}
+document.getElementById('checkoutOverlay').addEventListener('click',function(e){if(e.target===this)closeCheckout()});
+document.getElementById('checkoutPay').addEventListener('click',function(){var n=document.getElementById('coName').value.trim(),e=document.getElementById('coEmail').value.trim();if(!n||!e){alert('Please fill in name and email.');return}var orders=JSON.parse(localStorage.getItem('pv_orders')||'[]');orders.push({id:'PV-DK-'+Date.now().toString(36).toUpperCase(),item:'Developer Kit',price:'9',name:n,email:e,date:new Date().toISOString()});localStorage.setItem('pv_orders',JSON.stringify(orders));window.open('https://paypal.me/'+PAYPAL_USERNAME+'/9USD','_blank');document.getElementById('checkoutForm').style.display='none';document.getElementById('checkoutSuccess').style.display='block'});
+</script>
+</body>
+</html>
